@@ -1,0 +1,8 @@
+cache/*
+img/tmp/
+config/config.inc.php
+config/settings.inc.php
+
+#Mac OS
+._*
+.DS_STORE
