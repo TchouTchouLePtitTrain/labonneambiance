@@ -1,0 +1,49 @@
+#search_block_left{
+	display:block;
+	width:300px;
+	float:right;
+	margin-right: 0px;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#9e9d9d;
+	margin-top:30px;
+}
+#search_block_top{
+	display:block;
+	width:300px;
+	float:right;
+	margin-right: 0px;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#9e9d9d;
+	margin-top:30px;
+}
+
+#searchbox input[type=text]{
+	float:left;
+	border:0;
+	width:260px;
+	height:80px;
+	background:url(images/champ_rechercher.png) top left no-repeat;
+	color:#9e9d9d;
+	padding:40px 0 0 65px;
+}
+
+#searchbox input[type=text]:focus{
+	background:url(images/champ_rechercher_hover.png) top left no-repeat;
+}
+
+#searchbox input[type=submit]{
+	float:left;
+	border:0;
+	width:40px;
+	height:80px;
+	background:url(images/champ_rechercher.png) top right no-repeat;
+	cursor:pointer;
+}
+
+#searchbox input[type=submit]:hover{
+	background:url(images/champ_rechercher_hover.png) top right no-repeat;
+}

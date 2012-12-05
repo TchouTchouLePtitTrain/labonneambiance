@@ -1,0 +1,54 @@
+.siteInfos{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:10px;
+	color:#585354;
+}
+
+.siteInfos .filet{
+	display:block;
+	background-color: #383838;
+	height: 1px;
+	width:100%;
+	top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom:5px;
+}
+
+#footer .filet2{
+	display:block;
+	color:#E2DDD8;
+	float:left;
+	margin-left:20px;
+	margin-right:20px; 
+	margin-top:15px;
+	position:relative;
+}
+
+.footerGauche{
+	display:block;
+	margin-top:25px;
+	margin-left: 0px;
+	margin-right: auto;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#585354;
+	float:left;
+	text-decoration: none;
+}
+
+.copyright{
+	display:block;
+	margin-top:25px;
+	margin-left: auto;
+	margin-right: 0px;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#585354;
+	float:right;
+	text-decoration: none;
+}

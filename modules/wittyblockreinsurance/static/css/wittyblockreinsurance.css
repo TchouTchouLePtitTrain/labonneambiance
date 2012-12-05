@@ -1,0 +1,29 @@
+.footer1{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	height: auto;
+}
+
+.img_paiement{
+	display:block;
+	position: relative;
+	background-image: url(../images/footer_paiement.png);
+	height:86px;
+	width:662px;
+	margin-bottom:20px;
+	float:left;
+}
+
+.img_valeurs{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image: url(../images/footer_valeurs.png);
+	height:86px;
+	width:324px;
+	float:right;
+	margin-bottom:20px;
+}

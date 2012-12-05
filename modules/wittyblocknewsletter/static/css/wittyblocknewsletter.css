@@ -1,0 +1,37 @@
+#newsletter{
+	display:block;
+	width:485px;
+	float:left;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#9e9d9d;
+	margin-top:7px;
+}
+
+#newsletter input[type=text]{
+	float:left;
+	border:0;
+	width:436px;
+	height:50px;
+	background:url(../images/champ_newsletter.png) top left no-repeat;
+	color:#9e9d9d;
+	padding:0px 0 0 240px;
+}
+
+#newsletter input[type=text]:focus{
+	background: url(../images/champs_newsletter_hover.png) top left no-repeat;
+}
+
+#newsletter input[type=submit]{
+	float:left;
+	border:0;
+	width:48px;
+	height:50px;
+	background:url(../images/champ_newsletter.png) top right no-repeat;
+	cursor:pointer;
+}
+
+#newsletter input[type=submit]:hover{
+	background: url(../images/champs_newsletter_hover.png) top right no-repeat;
+}

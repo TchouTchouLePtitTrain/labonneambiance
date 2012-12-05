@@ -1,0 +1,273 @@
+.galerie{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:490px;
+	height:400px;
+	background-color:#CCC;
+	float:left;
+	margin-top:5px;/*30px;*/
+}
+
+.ficheJeu{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:490px;
+	height:auto;
+	float:right;
+	margin-top:5px;/*30px;*/
+}
+
+.ficheJeu .filet{
+	display:block;
+	background-color: #e2dddb;
+	height: 1px;
+	width:100%;
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom:20px;
+}
+
+.infosGauche{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	float:left;
+	width: 300px;
+}
+
+.infosDroite{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	float:right;
+	width:190px;
+}
+
+.ficheJeu .infosGauche .titre{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#3d3d3d;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
+.ficheJeu .texte{
+	color:#797c7d;
+	line-height:15px;
+}
+
+.ficheJeu .infosDroite .prix{
+	display:block;
+	margin-left: 20px;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:30px;
+	color:#3d3d3d;
+	margin-bottom:0px;
+	float:right;
+	margin-top:0px;
+}
+
+.ficheJeu .infosDroite .stock{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:14px;
+	color:#3d3d3d;
+	margin-bottom:5px;
+	float:right;
+	margin-top: 10px;
+}
+
+.btn_ajouterPanier{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image:url(../img/product/btn_ajouterPanier_normal.png);
+	height:53px;
+	width:187px;
+	float:right;
+}
+
+.btn_ajouterPanier:hover{
+	background-image:url(../img/product/btn_ajouterPanier_hover.png);
+}
+
+.packs{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+	
+/* bloc info sur les jeux du pack */
+
+.JeuxduPack{
+	display:block;
+	width:1000px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	border-top: solid 1px #3d3d3d;
+	margin-top: 30px;
+}
+
+.JeuxduPack .titre{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#3d3d3d;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
+.JeuxduPack .infos{
+	display:block;
+	width:312px;
+	height:350px;
+	float:left;
+	margin-top:20px;
+}
+
+.JeuxduPack .infos .filet{
+	display:block;
+	background-color: #e2dddb;
+	height: 1px;
+	width:100%;
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom:20px;
+}
+
+.JeuxduPack .filet2{
+	position:relative;
+	color:#e9e8e8;
+	margin-left: 15px;
+	margin-right: 15px;
+	opacity:0.3;
+	float:left;
+	margin-top:20px;
+}
+
+/* Packs liste */
+
+.pack{
+	display:block;
+	width:312px;
+	margin-top:20px;
+	margin-left: 10px;
+	margin-right: auto;
+	position: relative;
+	padding-bottom:5px;
+	padding-right:10px;
+	float:left;
+	border-right : solid 1px #f4f4f3;
+	border-bottom : solid 1px #f4f4f3;
+	cursor: pointer;
+}
+
+.pack:hover .titre{
+	color:#d83028;
+}
+
+.pack .image{
+	display:block;
+	margin-left: 0px;
+	margin-right: 15px;
+	position: relative;
+	background-image:url(../images/img_packs.png);
+	height:135px;
+	width:310px;
+	float:left;
+	cursor:pointer;
+	margin-bottom:15px;
+}
+
+.pack .infos{
+	margin-bottom:0px;
+	float:left;
+}
+
+.pack .titre{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:20px;
+	color:#3d3d3d;
+	margin-top: 0px;
+	margin-bottom:10px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.pack .titre:hover{
+	color:#d83028;
+}
+
+.fraisport{
+	display:block;
+	margin-left: auto;
+	margin-right: 10px;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	float:right;
+	color:#797c7d;
+	margin-top: 0px;
+}
+
+.pack .prix{
+	display:block;
+	margin-left: auto;
+	margin-right: 10px;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:30px;
+	float:right;
+	margin-top:25px;
+	margin-bottom: 5px;
+}
+
+.pack .voirFiche{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#2f2f2f;
+	cursor:pointer;
+	float: left;
+	margin-top: 0px;
+}
+
+.pack .voirFiche:hover{
+	text-decoration:underline;
+}
+
+a.pack_price{
+	float:right;
+}

@@ -1,0 +1,92 @@
+section.nouveautes{
+	display:block;
+	height:auto;
+	width:488px;
+	margin-top:0px;
+	margin-left: Opx;
+	margin-right: 20px;
+	position: relative;
+	border : solid 1px #e2dddb;
+	float:left;
+}
+
+.nouveautes .titreNouveautes{
+	display:block;
+	margin-left: -1px;
+	margin-right: auto;
+	position: relative;
+	background-image: url(../images/titre_bloc_nouveaute_normal.png);
+	height:77px;
+	width:490px;
+}
+
+.nouveautes .titreNouveautes:hover{
+	background-image: url(../images/titre_bloc_nouveaute_hover.png);
+}
+
+.blocJeu{
+	display:block;
+	width:90%;
+	margin-top:15px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding-bottom:15px;
+	height: 95px;
+	cursor: pointer;
+}
+
+.blocJeu:hover .titre{
+	color:#d83028;
+}
+
+.blocJeu .image{
+	display:block;
+	margin-left: 0px;
+	margin-right: 15px;
+	position: relative;
+	background-color:#000;
+	height:84px;
+	width:84px;
+	float:left;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+
+.blocJeu .infos{
+	margin-left:100px;
+}
+
+.blocJeu .infos .titre{
+	font-size:14px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+.blocJeu .voirFiche{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#2f2f2f;
+	cursor:pointer;
+	float: left;
+	margin-top: 7px;
+}
+
+.blocJeu .voirFiche:hover{
+	text-decoration:underline;
+}
+
+.blocJeu .filet{
+	display:block;
+	background-color: #e2dddb;
+	height: 1px;
+	width:100%;
+	top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
