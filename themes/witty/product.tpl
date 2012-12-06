@@ -169,7 +169,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 	<!-- product img-->
 	<div class="galerie">
-		{* En attendant que les images fonctionnent *}
+		{* En attendant que les images fonctionnent
 		{if $product->id == 1}
 			<img src="img_temp/pong_grand.png" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic" width="490" height="400" />
 		{elseif $product->id == 2}
@@ -189,28 +189,36 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		{elseif $product->id == 9}
 			<img src="img_temp/packNoel_grand.png" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic" width="490" height="400" />
 		{/if}
-	
-		{*
-		{if $have_image}
-			<img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large')}" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic" width="{$largeSize.width}" height="{$largeSize.height}" />
-		{else}
-			<span id="view_full_size">
-				<img src="{$img_prod_dir}{$lang_iso}-default-large.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
-				<span class="span_link">{l s='View full size'}</span>
-			</span>
-		{/if}
 		*}
+	
+		
+		{if $have_image}
+			<img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')}" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic" width="{$largeSize.width}" height="{$largeSize.height}" />
+		{else}
+			<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
+		{/if}
+		
 	</div>
 	
 	<section class="ficheJeu">
 		<article class="infosGauche">
-			<h1 class="titre">{$product->name|escape:'htmlall':'UTF-8'}</h1>
-			<p class="texte" style="font-weight:bold;">composé de :</p>
-			<p class="texte">
-				{foreach from=$packItems item=packItem}
-				- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
-				{/foreach}
-			</p>
+		
+			{if $packItems|@count > 0} {* Si on affiche un pack *}
+				<h1 class="titre">{$product->name|escape:'htmlall':'UTF-8'}</h1>
+				<p class="texte" style="font-weight:bold;">composé de :</p>
+				<p class="texte">
+					{foreach from=$packItems item=packItem}
+					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
+					{/foreach}
+				</p>
+			{else} {* TODO : ajouter les informations sur l'auteur *}
+				<h1 class="titre">{$product->name|escape:'htmlall':'UTF-8'}</h1>
+				<p class="texte">
+					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
+				</p>
+			{/if}
+			
+			
 		</article>
 		
 		
@@ -267,7 +275,48 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 {if isset($packItems) && $packItems|@count > 0}
 	<div id="blockpack">
 		<h2>{l s='Pack content'}</h2>
-		{include file="$tpl_dir./product-list.tpl" products=$packItems}
+		<!-- Products list -->
+		{foreach from=$packItems item=product name=products}
+			<article class="jeu">
+				{*
+				{if $product.id_product == 1}
+					<img class="image" src="img_temp/pong_grand.png" width="124" height="124" />
+				{elseif $product.id_product == 2}
+					<img class="image" src="img_temp/zibi_grand.png" width="124" height="124" />
+				{elseif $product.id_product == 3}
+					<img class="image" src="img_temp/chronos_grand.png" width="124" height="124" />
+				{elseif $product.id_product == 4}
+					<img class="image" src="img_temp/ice3_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==5}
+					<img class="image" src="img_temp/empathy_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==6}
+					<img class="image" src="img_temp/temple_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==7}
+					<img class="image" src="img_temp/timesup_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==8}
+					<img class="image" src="img_temp/dobble_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==9}
+					<img class="image" src="img_temp/packNoel_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==10}
+					<img class="image" src="img_temp/ice3_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==11}
+					<img class="image" src="img_temp/dobble_grand.png" width="124" height="124" />
+				{elseif $product.id_product ==12}
+					<img class="image" src="img_temp/timesup_grand.png" width="124" height="124" />
+				{/if}
+				*}
+				<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
+				
+				<div class="infos">
+					<h1 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h1>
+					<p class="texte">{$product.description_short|strip_tags:'UTF-8'}</p>
+				 </div>
+				  <div class="spacer"></div> 
+				<a class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</a>
+				<p class="prix">{convertPrice price=$product.price}</p>
+			</article>
+		{/foreach}
+		<!-- /Products list -->
 	</div>
 {/if}
 
