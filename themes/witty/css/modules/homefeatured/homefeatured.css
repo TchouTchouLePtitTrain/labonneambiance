@@ -65,7 +65,7 @@ section.produitsPhares{
 	height:auto;
 	width:322px;
 	margin-top:0px;
-	margin-left: Opx;
+	margin-left: 0px;
 	margin-right: 0px;
 	position: relative;
 	border : solid 1px #e2dddb;
@@ -77,13 +77,13 @@ section.produitsPhares{
 	margin-left: -1px;
 	margin-right: auto;
 	position: relative;
-	background-image: url(images/titre_bloc_precommande_normal.png);
+	background-image: url(images/titre_bloc_phare_normal.png);
 	height:77px;
 	width:324px;
 	cursor:default;
 }
 
 .produitsPhares .titreProduitsPhares:hover{
-	background-image: url(images/titre_bloc_precommande_hover.png);
+	background-image: url(images/titre_bloc_phare_hover.png);
 }
 

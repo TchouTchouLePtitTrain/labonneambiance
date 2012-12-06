@@ -138,9 +138,6 @@ a{text-decoration: none;}
 *********/
 
 /* header */
-#header_logo .logo{
-	margin-top: 30px;
-}
 
 #header_right {
     float: right;
@@ -288,9 +285,9 @@ span.exclusive_mini, span.exclusive_small, span.exclusive, span.exclusive_large,
 	display:inline-block;
 	padding:5px 7px;
 	border:1px solid #cc9900;
-	-moz-border-radius: 3px;
+	/* -moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 3px; */
 	font-weight:bold;
 	color:#000;
 	background:url(../img/bg_bt.gif) repeat-x 0 0 #f4b61b;
@@ -669,11 +666,26 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 /* ************************************************************************************************
 		HEADER
 ************************************************************************************************ */
-#header {position:relative}
-#header_logo {
+#bandeau_header{	
+	display:block;
+	position:absolute;
+	top:0px;
+	height:70px;
+	width:100%;
+	background-color:#f8f8f8;
+	border-bottom: solid 1px #e7e7e7;
+}
+	
+#header {
+	position:relative;
+}
+#header .logo {
 	float:left;
 	display:block;
-	margin-top:30px;
+	margin-top:15px;
+	background:url(../img/logo_bonneambiance.png);
+	height:41px;
+	width:297px;
 }
 
 #header_right {

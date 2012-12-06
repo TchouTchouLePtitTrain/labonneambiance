@@ -50,14 +50,12 @@
 		{/if}
 		<li id="your_account"><a href="{$link->getPageLink('my-account', true)}" title="{l s='Your Account' mod='blockuserinfo'}">{l s='Your Account' mod='blockuserinfo'}</a></li>
 	</ul>
-	<p id="header_user_info">
-		{l s='Welcome' mod='blockuserinfo'}
+	<div id="header_user_info">
 		{if $logged}
-			<a href="{$link->getPageLink('my-account', true)}" class="account"><span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span></a>
-			<a href="{$link->getPageLink('index', true, NULL, "mylogout")}" title="{l s='Log me out' mod='blockuserinfo'}" class="logout">{l s='Log out' mod='blockuserinfo'}</a>
+			<a href="{$link->getPageLink('my-account', true)}" class="account">{l s='Mon compte' mod='blockuserinfo'}</a>
 		{else}
 			<a href="{$link->getPageLink('my-account', true)}" class="login">{l s='Log in' mod='blockuserinfo'}</a>
 		{/if}
-	</p>
+	</div>
 </div>
 <!-- /Block user information module HEADER -->
