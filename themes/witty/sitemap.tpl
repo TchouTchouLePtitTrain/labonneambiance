@@ -25,7 +25,7 @@
 *}
 
 {capture name=path}{l s='Sitemap'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
+{* include file="$tpl_dir./breadcrumb.tpl" *}
 
 <h1>{l s='Sitemap'}</h1>
 <div id="sitemap_content" class="clearfix">

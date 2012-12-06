@@ -25,7 +25,7 @@
 *}
 
 {capture name=path}{l s='Forgot your password?'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
+{* include file="$tpl_dir./breadcrumb.tpl" *}
 
 <h1>{l s='Forgot your password?'}</h1>
 

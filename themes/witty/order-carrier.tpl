@@ -72,7 +72,7 @@
 
 {if !$opc}
 {capture name=path}{l s='Shipping'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
+{* include file="$tpl_dir./breadcrumb.tpl" *}
 {/if}
 
 {if !$opc}<h1>{l s='Shipping'}</h1>{else}<h2><span>2</span> {l s='Delivery methods'}</h2>{/if}

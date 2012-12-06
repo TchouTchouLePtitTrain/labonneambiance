@@ -25,7 +25,7 @@
 *}
 
 {capture name=path}{l s='Login'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
+{* include file="$tpl_dir./breadcrumb.tpl" *}
 
 <script type="text/javascript">
 // <![CDATA[

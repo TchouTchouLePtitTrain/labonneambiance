@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($cms) && ($content_only == 0)}
-	{include file="$tpl_dir./breadcrumb.tpl"}
+	{* include file="$tpl_dir./breadcrumb.tpl" *}
 {/if}
 {if isset($cms) && !isset($category)}
 	{if !$cms->active}

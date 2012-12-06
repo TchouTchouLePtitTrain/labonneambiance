@@ -37,7 +37,7 @@
 	</script>
 
 	{capture name=path}{l s='Your payment method'}{/capture}
-	{include file="$tpl_dir./breadcrumb.tpl"}
+	{* include file="$tpl_dir./breadcrumb.tpl" *}
 {/if}
 
 {if !$opc}<h1>{l s='Choose your payment method'}</h1>{else}<h2><span>3</span> {l s='Choose your payment method'}</h2>{/if}
