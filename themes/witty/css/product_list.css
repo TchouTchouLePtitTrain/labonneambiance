@@ -29,3 +29,33 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+
+.liste .jeu .image{
+	background-color: #000000;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 84px;
+    /*margin-bottom: 5px;*/
+    margin-left: 0;
+    margin-right: 15px;
+    position: relative;
+    width: 84px;
+}
+.liste .jeu .infos{
+    display: block;
+    font-family: "Arial",Helvetica,sans-serif;
+    position: relative;
+}
+.liste .jeu .infos h2.titre{
+	padding-bottom: 0;
+}
+.liste .jeu .infos .caracteristiques{
+	color: #797C7D;
+    display: block;
+    margin-left: 100px;
+    font-size: 12px;
+    margin-bottom: 7px;
+    position: relative;
+	list-style-type: none;
+}

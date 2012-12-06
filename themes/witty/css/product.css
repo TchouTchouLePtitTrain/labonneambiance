@@ -4,7 +4,7 @@
 	margin-right:auto;
 	width:490px;
 	height:400px;
-	background-color:#CCC;
+	/*background-color:#CCC;*/
 	float:left;
 	margin-top:5px;/*30px;*/
 }
@@ -275,7 +275,7 @@ a.pack_price{
 #bigpic{
 	width:600px;
 	margin-top:-100px;
-	margin-left: -53px;
+	margin-left: -55px;
 }
 
 /* Jeux du pack */
