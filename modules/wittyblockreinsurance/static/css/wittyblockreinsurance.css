@@ -14,6 +14,7 @@
 	width:662px;
 	margin-bottom:20px;
 	float:left;
+	cursor:default;
 }
 
 .img_valeurs{
@@ -26,4 +27,5 @@
 	width:324px;
 	float:right;
 	margin-bottom:20px;
+	cursor:default;
 }

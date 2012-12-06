@@ -1,5 +1,5 @@
-<section class="meilleuresVentes">
-	<a class="titreMeilleuresVentes"></a>
+<section class="produitsPhares">
+	<a class="titreProduitsPhares"></a>
 	{foreach from=$best_sellers item=product name=myLoop}
 		<article class="blocJeu">
 			<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.name|truncate:27:'...'|escape:'htmlall':'UTF-8'}"/>
@@ -10,6 +10,7 @@
 			</div>
 			<div class="spacer"> </div>
 			<div class="filet"></div>
+			<div class="spacer"> </div>
 	   </article>
 	{/foreach}
 </section>

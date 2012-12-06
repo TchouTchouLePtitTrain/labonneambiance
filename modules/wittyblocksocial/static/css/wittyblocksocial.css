@@ -5,16 +5,21 @@
 	height:65px;
 }
 
-.retrouvezNous{
+#footer .widget-facebook .retrouvezNous{
 	display:block;
 	margin-left: auto;
 	margin-right: 10px;
 	font-family:"Arial", Helvetica, sans-serif;
-	font-size:12px;
+	font-size:13px;
 	color:#585354;
 	font-weight:bold;
 	padding-top:23px;
 	float:left;
+	text-decoration:none;
+}
+
+#footer .widget-facebook .retrouvezNous :hover{
+	text-decoration:none;
 }
 
 .superMerci{
@@ -26,4 +31,9 @@
 	background:url(../images/superMerci.png);
 	float:right;
 	margin-top:10px;
+	cursor:default;
+}
+
+.fb_iframe_widget{
+	width:230px;
 }

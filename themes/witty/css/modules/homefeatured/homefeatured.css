@@ -60,3 +60,30 @@
 #featured-products_block_center li .ajax_add_to_cart_button {display:none;}
 #featured-products_block_center li span.exclusive {display:none;}
 
+section.produitsPhares{
+	display:block;
+	height:auto;
+	width:322px;
+	margin-top:0px;
+	margin-left: Opx;
+	margin-right: 0px;
+	position: relative;
+	border : solid 1px #e2dddb;
+	float:left;
+}
+
+.produitsPhares .titreProduitsPhares{
+	display:block;
+	margin-left: -1px;
+	margin-right: auto;
+	position: relative;
+	background-image: url(images/titre_bloc_precommande_normal.png);
+	height:77px;
+	width:324px;
+	cursor:default;
+}
+
+.produitsPhares .titreProduitsPhares:hover{
+	background-image: url(images/titre_bloc_precommande_hover.png);
+}
+
