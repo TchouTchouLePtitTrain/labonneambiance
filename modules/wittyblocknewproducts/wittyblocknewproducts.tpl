@@ -1,5 +1,5 @@
 <section class="nouveautes">
-	<a class="titreNouveautes"></a>
+	<a class="titreNouveautes" href="{$base_dir}category.php?id_category=3"></a>
 	{foreach from=$new_products item=product}
 		<article class="blocJeu">
 			<a href="{$product.link}">
@@ -8,6 +8,7 @@
 					<h1 class="titre">{$product.name|strip_tags|escape:html:'UTF-8'}</h1>
 					<p class="texte">{$product.description_short|strip_tags:'UTF-8'|truncate:85:'...'}</p>
 					<p class="voirFiche">&rArr; Voir la fiche</p>
+					<p class="prix">{convertPrice price=$product.price}</p>
 				</div>
 			</a>
 			<div class="spacer"></div>

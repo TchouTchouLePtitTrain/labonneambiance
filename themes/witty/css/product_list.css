@@ -30,6 +30,11 @@
 	margin-bottom: 0px;
 }
 
+.liste .jeu .lien_image{
+	display:block;
+	width:84px;
+	height:84px;
+}
 .liste .jeu .image{
 	background-color: #000000;
     cursor: pointer;

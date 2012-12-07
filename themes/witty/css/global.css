@@ -22,7 +22,6 @@ body{
 /* Style d'éléments génériques */
 a{text-decoration: none;}
 
-
 /* Styles de classes génériques */
 .filet{
 	display: block;
@@ -104,7 +103,7 @@ a{text-decoration: none;}
 	cursor:pointer;
 }
 
-.blocJeu .voirFiche{
+.voirFiche{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
@@ -117,7 +116,7 @@ a{text-decoration: none;}
 	margin-top: 7px;
 }
 
-.blocJeu .voirFiche:hover{
+.voirFiche:hover{
 	text-decoration:underline;
 }
 
@@ -270,7 +269,7 @@ a, a:active, a:visited {
 	text-decoration:none;
 	outline: medium none
 }
-	a:hover {text-decoration:underline}
+	a:hover {text-decoration:none}
 
 /*buttons ************************************************************************************** */
 input.button_mini, input.button_small, input.button, input.button_large,
