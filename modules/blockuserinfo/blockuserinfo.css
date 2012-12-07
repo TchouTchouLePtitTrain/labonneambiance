@@ -14,22 +14,15 @@
 
 /* cart */
 #shopping_cart {
-	margin-top:15px;
-	margin-left:15px;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-weight:bold;
-	font-size:12px;
-	width:190px;
+	
+	
+	
 }
-
-.texte_rouge{
-	color:#d83028;
-}
-
 #shopping_cart a{
 	height: 15px;
-	padding:17px 27px 10px 43px;
-	background: url('img/icon/cart.png') no-repeat 10px 15px;
+	padding:15px 27px 10px 43px;
+	background: url('img/icon/cart.gif') no-repeat 10px 9px #eee;
+	width: 130px;/* 200 */
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;display:block}
@@ -44,30 +37,25 @@
 
 /* user infos */ 
 #header_user_info {
-	float:left;
-	margin-left:30px;
-	font-size:12px;
-	display:block;
-	height:30px;
-	width:100px;
-	padding:40px 10px 0px 10px;
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	text-align:center;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-weight:bold;
+	clear:both;
+	float:right;
+	margin-top:10px;
+	padding:0;
+	font-size:12px
 }
-
-#header_user_info :hover{
-	text-decoration:underline;
-}
-
 #header_user_info a {
+	display:inline-block;
+	margin:0 0 0 10px;
+	padding:3px 0 0 34px;
 	line-height: 11px;
+	border-left:1px solid #000
 }
 #header_user_info a.account {
 	border: none;
-	background: url('img/icon/login.gif') no-repeat 30px 0;
-	padding-top:20px;
+	display: inline;
+	margin: 0;
+	padding: 0;
 }
 *:first-child+html #header_user_info a {line-height:14px;}
+#header_user_info a.login {background: url('img/icon/login.gif') no-repeat 10px 0}
+#header_user_info a.logout {background: url('img/icon/logout.png') no-repeat 10px -1px}
