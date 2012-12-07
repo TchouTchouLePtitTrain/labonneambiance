@@ -1,5 +1,5 @@
-<section class="meilleuresVentes">
-	<a class="titreMeilleuresVentes" href="{$base_dir}category.php?id_category=3"></a>
+<section class="produitsPhares">
+	<a class="titreProduitsPhares" href="{$base_dir}category.php?id_category=3"></a>
 	{foreach from=$products item=product name=myLoop}
 		<article class="blocJeu">
 			<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.name|truncate:27:'...'|escape:'htmlall':'UTF-8'}"/>
