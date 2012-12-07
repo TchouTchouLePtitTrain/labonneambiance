@@ -736,8 +736,22 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 #footer a {color:#000}
 #footer a:hover {text-decoration:underline}
 #footer ul {list-style-type:none}
-#footer li {padding:7px 0}
-#footer li a {color:#fff}
+#footer li {padding:7px 10px; display:inline-block;}
+#footer li a {color:#000}
+
+.copyright{
+	font:normal 11px/14px Arial, Verdana, sans-serif;
+	float:right;
+}
+
+.infos_footer{
+	display:block;
+	width:100%;
+	margin-top:15px;
+	height:30px;
+	border-top:1px solid #E2DDDB;
+	float:left;
+}
 
 #footer .myaccount {padding: 15px 10px}
 #footer .myaccount h4 {
@@ -751,7 +765,8 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 #footer .filet2{
 	display: block;
 	position:relative;
-	margin-left: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 	margin-top:17px;
 	float:left;
 	opacity:0.3;

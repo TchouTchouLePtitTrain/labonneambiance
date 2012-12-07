@@ -1,8 +1,9 @@
 .widget-facebook{
 	display:block;
-	float:right;
+	float:left;
 	margin-top:0px;
 	height:65px;
+	width:480px;
 }
 
 #footer .widget-facebook .retrouvezNous{
@@ -26,7 +27,7 @@
 	display:block;
 	margin-left: auto;
 	margin-right: 0px;
-	width:90px;
+	width:85px;
 	height:50px;
 	background:url(../images/superMerci.png);
 	float:right;
@@ -34,6 +35,4 @@
 	cursor:default;
 }
 
-.fb_iframe_widget{
-	width:230px;
-}
+.fb-like-box{float:right;}
