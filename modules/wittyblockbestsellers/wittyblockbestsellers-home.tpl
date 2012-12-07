@@ -13,6 +13,6 @@
 			</a>
 			<div class="spacer"></div>
 			<div class="filet"></div>
-	   </article>
+		</article>
 	{/foreach}
 </section>
