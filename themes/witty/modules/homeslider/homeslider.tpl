@@ -24,6 +24,8 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
+<div class="spacer"></div>
+
 <!-- Module HomeSlider -->
 {if isset($homeslider)}
 <script type="text/javascript">

@@ -19,6 +19,48 @@
 	margin-top:5px;/*30px;*/
 }
 
+.ficheJeu .infosGauche li{
+	font-size:13px;
+	color: #797c7d;
+	margin-bottom:5px;
+	list-style-type: none; 
+}
+
+#blockpack .jeu .infos li{
+	font-size:13px;
+	color: #797c7d;
+	margin-bottom:5px;
+	list-style-type: none; 
+}
+
+#blockpack .jeu{
+	display:block;
+	float:left;
+	height:auto;
+	margin-top:20px;
+	width:290px;
+	padding-right:20px;
+}
+
+#blockpack .jeu .filet{
+	display:block;
+	background-color: #e2dddb;
+	height: 1px;
+	width:100%;
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom:20px;
+}
+
+
+.ficheJeu p{
+	font-size:13px;
+	color: #797c7d;
+	line-height:18px;
+}
+
 .ficheJeu .filet{
 	display:block;
 	background-color: #e2dddb;
@@ -67,6 +109,12 @@
 	line-height:15px;
 }
 
+.ficheJeu .texte a{
+	color:#797c7d;
+	line-height:15px;
+	margin-bottom:5px;
+}
+
 .ficheJeu .infosDroite .prix{
 	display:block;
 	margin-left: 20px;
@@ -102,6 +150,9 @@
 	height:53px;
 	width:187px;
 	float:right;
+	border: 1px solid #fff;
+	background-color: #fff;
+	margin-top:-10px;
 }
 
 .btn_ajouterPanier:hover{
@@ -278,9 +329,13 @@ a.pack_price{
 	margin-left: -55px;
 }
 
+#primary_block{
+	margin-top:20px;
+}
+
 /* Jeux du pack */
 #blockpack{
-	border-top: 1px solid #3D3D3D;
+	/*border-top: 1px solid #3D3D3D;*/
 }
 
 #blockpack .jeu .infos h2{
