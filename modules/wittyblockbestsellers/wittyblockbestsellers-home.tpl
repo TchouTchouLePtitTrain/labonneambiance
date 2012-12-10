@@ -1,5 +1,5 @@
 <section class="meilleuresVentes">
-	<a class="titreMeilleuresVentes" href="{$base_dir}category.php?id_category=3"></a>
+	<a class="titreMeilleuresVentes" href="{$link->getPageLink('best-sales')}"></a>
 	{foreach from=$best_sellers item=product name=myLoop}
 		<article class="blocJeu">
 			<a href="{$product.link}">

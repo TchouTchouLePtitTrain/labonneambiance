@@ -168,7 +168,7 @@ var ajaxCart = {
 
 		//reactive the button when adding has finished
 		if (addedFromProductPage)
-			$('body#product input#add_to_cart').removeAttr('disabled').addClass('exclusive').removeClass('exclusive_disabled');
+			$('body#product p#add_to_cart input').removeAttr('disabled').addClass('exclusive').removeClass('exclusive_disabled');
 		else
 			$('.ajax_add_to_cart_button').removeAttr('disabled');
 	},
@@ -184,7 +184,7 @@ var ajaxCart = {
 		//disabled the button when adding to do not double add if user double click
 		if (addedFromProductPage)
 		{
-			$('body#product input#add_to_cart').attr('disabled', true).removeClass('exclusive').addClass('exclusive_disabled');
+			$('body#product p#add_to_cart input').attr('disabled', true).removeClass('exclusive').addClass('exclusive_disabled');
 			$('.filled').removeClass('filled');
 		}
 		else
@@ -240,7 +240,7 @@ var ajaxCart = {
 				alert("Impossible to add the product to the cart.\n\ntextStatus: '" + textStatus + "'\nerrorThrown: '" + errorThrown + "'\nresponseText:\n" + XMLHttpRequest.responseText);
 				//reactive the button when adding has finished
 				if (addedFromProductPage)
-					$('body#product input#add_to_cart').removeAttr('disabled').addClass('exclusive').removeClass('exclusive_disabled');
+					$('body#product p#add_to_cart input').removeAttr('disabled').addClass('exclusive').removeClass('exclusive_disabled');
 				else
 					$(callerElement).removeAttr('disabled');
 			}

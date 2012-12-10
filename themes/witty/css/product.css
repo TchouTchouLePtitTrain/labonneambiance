@@ -140,6 +140,18 @@
 	float:right;
 	margin-top: 10px;
 }
+.ficheJeu .infosDroite .indisponible{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:14px;
+	color:#D8331D;
+	margin-bottom:5px;
+	float:right;
+	margin-top: 10px;
+}
 
 .btn_ajouterPanier{
 	display:block;
@@ -153,6 +165,7 @@
 	border: 1px solid #fff;
 	background-color: #fff;
 	margin-top:-10px;
+	cursor: pointer;
 }
 
 .btn_ajouterPanier:hover{

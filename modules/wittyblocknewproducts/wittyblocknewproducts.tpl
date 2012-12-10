@@ -1,5 +1,5 @@
 <section class="nouveautes">
-	<a class="titreNouveautes" href="{$base_dir}category.php?id_category=3"></a>
+	<a class="titreNouveautes" href="{$base_dir}jeux-de-société-3"></a>
 	{foreach from=$new_products item=product}
 		<article class="blocJeu">
 			<a href="{$product.link}">

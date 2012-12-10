@@ -207,6 +207,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		<article class="infosDroite">
 			{if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
 				<!-- add to cart form-->
+				{* <form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart')}" method="post"> *}
 				<form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart')}" method="post">
 
 					<!-- hidden datas -->
@@ -233,12 +234,9 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 					{* Bouton d'ajout au panier *}
 					{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
-						<span class="btn_ajouterPanier">
-							<span></span>
-							{l s='Add to cart'}
-						</span>
+						<p class="indisponible">Ce jeu n'est pas disponible</p>
 					{else}
-						<input type="submit" name="Submit" class="btn_ajouterPanier" value=""/>
+						<input id="add_to_cart" type="submit" name="Submit" class="btn_ajouterPanier" value=""/>
 					{/if}
 					{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 				</form>
