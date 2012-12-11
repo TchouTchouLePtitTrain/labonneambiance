@@ -2,6 +2,7 @@
 img/tmp/
 config/config.inc.php
 config/settings.inc.php
+config/xml/default_country_modules_list.xml
 
 #Mac OS
 ._*
