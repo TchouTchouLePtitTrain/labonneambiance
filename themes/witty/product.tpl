@@ -246,7 +246,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			
         <div class="spacer"></div> 
         <div class="filet"></div>
-        <p class="texte">{$product->description_short}</p>
+        <p class="texte">{$product->description}</p>
 	</section>
 	
     <div class="spacer"> </div> 
@@ -267,7 +267,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 						{/foreach}
 					</ul>
 					<div class="filet"></div>
-					<p class="texte">{$product.description_short|strip_tags:'UTF-8'}</p>
+					<p class="texte">{$product.description|strip_tags:'UTF-8'}</p>
 				 </div>
 				  <div class="spacer"></div> 
 				<a class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</a>
