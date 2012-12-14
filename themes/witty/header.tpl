@@ -70,22 +70,22 @@
 		</div>
 		{/if}
 		<div id="bandeau_header"></div>
-		<div id="page" class="container_9 clearfix">
+		<div id="page">
 
 			<!-- Header -->
-			<header id="header" class="grid_9 alpha omega">
+			<header id="header" class="">
 				<a class="logo" src="" alt="logo la bonne ambiance" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
 				</a>
 				{$HOOK_TOP}
 				<div class="spacer"></div>
 			</header>
 
-			<div id="columns" class="grid_9 alpha omega clearfix">
+			<div id="columns" class="">
 				<!-- Left -->
-				<div id="left_column" class="column grid_2 alpha">
+				<div id="left_column">
 					{$HOOK_LEFT_COLUMN}
 				</div>
 
 				<!-- Center -->
-				<div id="center_column" class=" grid_5">
+				<div id="center_column">
 	{/if}

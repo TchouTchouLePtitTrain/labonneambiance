@@ -28,14 +28,14 @@
 				</div>
 
 <!-- Right -->
-				<div id="right_column" class="column grid_2 omega">
+				<div id="right_column">
 					{$HOOK_RIGHT_COLUMN}
 				</div>
 			</div>
 
 <!-- Footer -->
 			<div class="spacer"></div>
-			<div id="footer" class="grid_9 alpha omega clearfix">{$HOOK_FOOTER}</div>
+			<div id="footer">{$HOOK_FOOTER}</div>
 		</div>
 	{/if}
 	
