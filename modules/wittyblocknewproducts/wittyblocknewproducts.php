@@ -46,13 +46,10 @@ class WittyBlockNewProducts extends Module
 
 	public function install()
 	{
-			if (parent::install() == false || $this->registerHook('home') == false || Configuration::updateValue('NEW_PRODUCTS_NBR', 3) == false)
+			if (parent::install() == false || $this->registerHook('home') == false || Configuration::updateValue('NEW_PRODUCTS_NBR', 5) == false)
 					return false;
 			return true;
 	}
-
-	/*
-	Pour administrer le module. A faire.
 	
 	public function getContent()
 	{
@@ -96,7 +93,7 @@ class WittyBlockNewProducts extends Module
 			</form>';
 		return $output;
 	}
-	*/
+	
 	
 	public function hookHome($params)
 	{
