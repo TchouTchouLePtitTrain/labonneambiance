@@ -246,7 +246,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			
         <div class="spacer"></div> 
         <div class="filet"></div>
-        <p class="texte">{$product->description}</p>
+        {$product->description}
 	</section>
 	
     <div class="spacer"> </div> 

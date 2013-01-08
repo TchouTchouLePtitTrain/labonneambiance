@@ -40,6 +40,11 @@
 	margin-top:20px;
 	width:290px;
 	padding-right:20px;
+	cursor: auto;
+}
+
+#blockpack .jeu .infos .titre{
+	cursor: auto;
 }
 
 #blockpack .jeu .filet{
