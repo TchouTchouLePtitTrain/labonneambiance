@@ -6,7 +6,7 @@
             <description><![CDATA[Ajoute un bloc qui montre les nouveaux produits]]></description>
             <author><![CDATA[Thomas Chambon]]></author>
             <tab><![CDATA[witty_front_features]]></tab>
-            <is_configurable>0</is_configurable>
+            <is_configurable>1</is_configurable>
             <need_instance>0</need_instance>
 	<limited_countries></limited_countries>
         </module>

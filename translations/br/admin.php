@@ -1,4 +1,6 @@
 <?php
-	global $_LANGADM;
-	$_LANGADM = array();
+
+global $_LANGADM;
+$_LANGADM = array();
+
 ?>

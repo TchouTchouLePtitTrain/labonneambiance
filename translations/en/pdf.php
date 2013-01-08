@@ -78,3 +78,5 @@ $_LANGPDF['PDF6b9e9f2472786ed1e76005bfc37bc8af'] = 'Order Discount';
 $_LANGPDF['PDF77c48b105700c87484e3008ca52a8e57'] = '(Discount included)';
 $_LANGPDF['PDF699e6bd4690ed3bd5f658052e12aba04'] = 'Tax value';
 $_LANGPDF['PDF448634536559b1f8aaa975e0aa12b930'] = 'TOTAL TO PAY';
+
+?>

@@ -838,3 +838,5 @@ $_FIELDS['TaxRule_67daf92c833c41c95db874e18fcb2786'] = 'description';
 $_FIELDS['TaxRulesGroup_b068931cc450442b63f5b3d276ea4297'] = 'name';
 $_FIELDS['TaxRulesGroup_c76a5e84e4bdee527e274ea30c680d79'] = 'active';
 $_FIELDS['WebserviceKey_c76a5e84e4bdee527e274ea30c680d79'] = 'active';
+
+?>

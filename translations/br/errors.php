@@ -1,4 +1,6 @@
 <?php
-	global $_ERRORS;
-	$_ERRORS = array();
+
+global $_ERRORS;
+$_ERRORS = array();
+
 ?>
