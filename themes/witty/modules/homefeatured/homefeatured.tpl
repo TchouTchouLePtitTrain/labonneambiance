@@ -1,5 +1,5 @@
 <section class="produitsPhares">
-	<a class="titreProduitsPhares" href="{$base_dir}jeux-de-société-3"></a>
+	<a class="titreProduitsPhares" href="{$link->getCategoryLink(3)}"></a>
 	{foreach from=$products item=product name=myLoop}
 		<article class="blocJeu">
 			<a href="{$product.link}">

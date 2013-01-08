@@ -30,7 +30,7 @@ RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z
 RewriteCond %{HTTP_HOST} ^www.labonneambiance.com.local$
 RewriteRule ^c/([0-9]+)(\-[\.*_a-zA-Z0-9-]*)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2$3.jpg [L]
 RewriteCond %{HTTP_HOST} ^www.labonneambiance.com.local$
-RewriteRule ^c/([a-zA-Z-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg [L]
+RewriteRule ^c/([a-zA-Z_-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg [L]
 
 # Dispatcher
 RewriteCond %{REQUEST_FILENAME} -s [OR]

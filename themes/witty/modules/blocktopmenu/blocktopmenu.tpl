@@ -49,7 +49,7 @@
 <nav>
 	<ul id="menutop">
 		<li><a href="http://www.labonneambiance.com">Accueil</a></li> {* Accueil *}
-		<li><a href="{$base_dir}jeux-de-société-3">Les jeux</a></li> {* Catégorie des jeux *}
-		<li><a href="{$base_dir}packs-5">Les packs</a></li> {* Catégorie des packs *}
+		<li><a href="{$link->getCategoryLink(3)}">Les jeux</a></li> {* Catégorie des jeux *}
+		<li><a href="{$link->getCategoryLink(5)}">Les packs</a></li> {* Catégorie des packs *}
 	</ul>
 </nav>
