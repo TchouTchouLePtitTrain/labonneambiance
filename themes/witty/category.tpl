@@ -103,6 +103,10 @@
 				</div>
 			*}
 			
+			{if ($category->id == 3)}
+				{include file="./filter-list.tpl"}
+			{/if}
+			
 			{include file="./product-list.tpl" products=$products}
 			
 			<div class="content_sortPagiBar">
