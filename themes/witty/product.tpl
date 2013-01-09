@@ -244,12 +244,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		</article>
 			
 			
-        <div class="spacer"></div> 
+        <div class="spacer"></div>
         <div class="filet"></div>
         {$product->description}
 	</section>
 	
-    <div class="spacer"> </div> 
+    <div class="spacer"> </div>
 </div>
 
 {if isset($packItems) && $packItems|@count > 0}

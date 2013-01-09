@@ -31,7 +31,7 @@
 				<p class="prix">{convertPrice price=$product.price}</p>
 			</a>
 			{if ($smarty.foreach.products.index + 1) % 3 == 0}
-				<div class="spacer"></div>
+				<!-- <div class="spacer"></div> -->
 			{/if}
 		{/foreach}
 	</section>

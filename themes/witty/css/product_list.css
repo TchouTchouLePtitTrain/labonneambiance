@@ -30,6 +30,10 @@
 	margin-bottom: 0px;
 }
 
+.liste .jeu .prix{
+	padding-bottom: 0px;
+}
+
 .liste .jeu .lien_image{
 	display:block;
 	width:84px;
@@ -63,4 +67,247 @@
     margin-bottom: 7px;
     position: relative;
 	list-style-type: none;
+}
+
+.liste .jeu .infos .texte{
+	margin: 20px 0px 0px 0px;
+	padding-bottom:15px;
+}
+
+.liste .jeu .voirFiche{
+	padding-bottom:0px;
+}
+
+/* bandeau Jeux */ 
+.bandeau_jeux{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height:150px;
+	max-width:1000px;
+	margin-top:0px;
+	background: url(../img/bandeau_jeux.png) no-repeat;
+}
+
+/* affiner la sélection*/
+
+#affiner{
+	display:block;
+	margin-left:0%;
+	margin-right:0%;
+	float:left;
+	width:200px;
+	margin-top:20px;
+}
+
+.affinerBloc{
+	border-bottom : solid 1px #e9e8e8;
+	border-left : solid 1px #e9e8e8;
+	border-right : solid 1px #e9e8e8;
+	font-family:"Arial", Helvetica, sans-serif;
+	margin-top:0px;
+	margin-left: 0%;
+	margin-right: auto;
+	position: relative;
+	background-color:#FFF;
+}
+
+.affinerSelection{
+	display:block;
+	height: 25px;
+	width:198px;
+	font-size:13px;
+	color:#424141;
+	padding-top:6%;
+	text-align:center;
+	font-weight:bold;
+}
+
+.affinerFilet{
+	display:block;
+	height: 4px;
+	width:200px;
+	margin-top:0px;
+	margin-left: 0%;
+	margin-right: auto;
+	position: relative;
+	background-color:#424141;
+}
+
+/* Champ recherche */
+
+#affinerRecherche{
+	display:block;
+	height: 30px;
+	width:194px;
+	margin-top:1px;
+	margin-left: 0%;
+	margin-right: auto;
+	position: relative;
+	background-color:#f0efef;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#9e9d9d;
+	padding-top:10px;
+	padding-left:6px;
+	padding-bottom:4px;
+	border-bottom : solid 1px #e9e8e8;
+}
+
+#affiner_recherche input[type=text]{
+	float:left;
+	border:0;
+	width:160px;
+	height:24px;
+	background: url(../img/champs_affinerRecherche_normal.png) top left no-repeat;
+	color:#9e9d9d;
+	padding:0 0 0 10px;
+}
+
+#affiner_recherche input[type=text]:focus{
+	background:url(../img/champs_affinerRecherche_hover.png) top left no-repeat;
+}
+
+#affiner_recherche input[type=submit]{
+	float:left;
+	border:0;
+	width:26px;
+	height:24px;
+	background:url(../img/champs_affinerRecherche_normal.png) top right no-repeat;
+	cursor:pointer;
+}
+
+#affiner_recherche input[type=submit]:hover{
+	background:url(../img/champs_affinerRecherche_hover.png) top right no-repeat;
+}
+
+/* partie */
+
+.affinerPartie{
+	display:block;
+	height: 10px;
+	width:178px;
+	margin-top:1px;
+	margin-left: 0%;
+	margin-right: auto;
+	position: relative;
+	background-color:#f0efef;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	padding:10px;
+	border-left : solid 1px #e9e8e8;
+	border-right : solid 1px #e9e8e8;
+}
+
+.affinerTemps{
+	display:block;
+	height: auto;
+	width:188px;
+	font-size:12px;
+	color:#000;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+
+.BlocType{
+	display:block;
+	height: 140px;
+	width:188px;
+	font-size:12px;
+	color:#000;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	overflow:auto;
+}
+
+.BlocTheme{
+	display:block;
+	height: 226px;
+	width:188px;
+	font-size:12px;
+	color:#000;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	overflow:auto;
+}
+
+.check{
+	margin-right: 10px;
+	margin-bottom:8px;
+	cursor:pointer;
+}
+
+/* champs nombre */
+
+.BlocAge{
+	display:block;
+	height: 35px;
+	width:183px;
+	font-size:12px;
+	color:#000;
+	padding-top:10px;
+	padding-left:15px;
+	padding-bottom:10px;
+}
+
+#champs_nb input[type=text]{
+	display:block;
+	float:left;
+	border:0;
+	width:41px;
+	height:32px;
+	background: url(../img/champs_nb.png) top left no-repeat;
+	color:#424141;
+	font-weight:bold;
+	font-size:16px;
+	padding:0 0 0 10px;
+	margin-right:4px;
+}
+
+.blocTexte{
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:12px;
+	color:#424141;
+	float:left;
+	margin-top:10px;
+	margin-right:6px;
+}
+
+/* Module Plus Moins */
+
+.modulePlusMoins{
+	display:block;
+	float:left;
+	margin-right:6px;
+}
+
+.btn_plus{
+	display:block;
+	height:14px;
+	width:16px;
+	background: url(../img/btn_plus_normal.png) no-repeat;
+	cursor:pointer;
+}
+
+.btn_plus:hover{
+	background: url(../img/btn_plus_hover.png) no-repeat;
+}
+
+.btn_moins{
+	display:block;
+	height:14px;
+	width:16px;
+	background: url(../img/btn_moins_normal.png) no-repeat;
+	margin-top:4px;
+	cursor:pointer;
+}
+
+.btn_moins:hover{
+	background: url(../img/btn_moins_hover.png) no-repeat;
 }

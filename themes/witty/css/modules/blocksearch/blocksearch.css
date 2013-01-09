@@ -16,7 +16,7 @@
     height: 70px;
     margin-left: 30px;
     width: 300px;
-    padding-left: 30px;
+    padding-left: 25px;
     border-left: solid 1px #e7e7e7;
 }
 
@@ -43,7 +43,7 @@
 }
 
 #searchbox input[type=text]:focus{
-	background:url(images/champ_rechercher_hover.png) top left no-repeat;
+	background:url(images/champ_rechercher.png) top left no-repeat;
 }
 
 #searchbox input[type=submit]{
