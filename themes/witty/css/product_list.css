@@ -78,6 +78,75 @@
 	padding-bottom:0px;
 }
 
+/* Packs liste */
+
+.liste .pack{
+	display:block;
+	width:312px;
+	margin-top:20px;
+	margin-left: 10px;
+	margin-right: auto;
+	position: relative;
+	padding-bottom:5px;
+	padding-right:10px;
+	float:left;
+	border-right : solid 1px #f4f4f3;
+	border-bottom : solid 1px #f4f4f3;
+	cursor: pointer;
+}
+
+.liste .pack .titre{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:20px;
+	color:#3d3d3d;
+	margin-top: 0px;
+	margin-bottom:10px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.liste .pack .titre:hover{
+	color:#d83028;
+}
+
+.liste .pack .infos{
+	margin-bottom:0px;
+	float:left;
+}
+
+.liste .pack .prix{
+	display:block;
+	margin-left: auto;
+	margin-right: 10px;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:30px;
+	float:right;
+	margin-top:25px;
+	margin-bottom: 5px;
+}
+
+.liste .pack .voirFiche{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:11px;
+	color:#2f2f2f;
+	cursor:pointer;
+	float: left;
+	margin-top: 0px;
+}
+
+.liste .pack .voirFiche:hover{
+	text-decoration:underline;
+}
+
 /* bandeau Jeux */ 
 .bandeau_jeux{
 	display:block;

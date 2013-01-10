@@ -2,8 +2,31 @@
 	<!-- Products list -->
 	<section class="liste">
 		{foreach from=$products item=product name=products}
-			<a class="jeu" href="{$product.link|escape:'htmlall':'UTF-8'}">
+			<a class="pack" href="{$product.link|escape:'htmlall':'UTF-8'}">
+
+
+				{if $product.pack} {* Si c'est un pack *}
 				
+				<h2 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h2>
+
+				<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
+				
+				<div class="infos">		
+					<p class="texte">
+						{$product.description_short|strip_tags:'UTF-8'|truncate:150:'...'}
+					</p>
+					<p class="texte">
+					{foreach from=$packItems item=packItem}
+					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
+					{/foreach}
+					</p>
+				</div>
+				<p class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</p>
+				<p class="prix">{convertPrice price=$product.price}</p>
+
+
+				{else} {* Si c'est un produit *}
+
 				<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
 				
 				<div class="infos">
@@ -20,15 +43,14 @@
 						</ul>
 					{/if}
 					<p class="texte">
-						{if $product.pack} {* Si c'est un pack *}
-							{$product.description_short|strip_tags:'UTF-8'|truncate:150:'...'}
-						{else} {* Si c'est un produit *}
 							{$product.description_short|strip_tags:'UTF-8'|truncate:85:'...'}
-						{/if}
 					</p>
 				</div>
 				<p class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</p>
 				<p class="prix">{convertPrice price=$product.price}</p>
+
+				{/if}
+
 			</a>
 			{if ($smarty.foreach.products.index + 1) % 3 == 0}
 				<!-- <div class="spacer"></div> -->
