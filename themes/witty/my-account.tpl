@@ -27,7 +27,7 @@
 {capture name=path}{l s='My account'}{/capture}
 {* include file="$tpl_dir./breadcrumb.tpl" *}
 
-<h1>{l s='My account'}</h1>
+<h1 class="titre_page">{l s='My account'}</h1>
 {if isset($account_created)}
 	<p class="success">
 		{l s='Your account has been created.'}

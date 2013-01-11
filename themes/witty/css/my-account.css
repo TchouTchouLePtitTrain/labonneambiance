@@ -19,3 +19,33 @@
 	top:6px;
 	left:0
 }
+
+/* modification au css de base de prestashop */
+
+.myaccount_lnk_list{
+	width: 1000px;
+	padding-left: 5px;
+}
+
+.myaccount_lnk_list li{
+	display: block;
+	position: relative;
+	height: 40px;
+	width: 290px;
+	border: solid 1px #f4f4f3;
+	float: left;
+	padding: 15px;
+	border-radius: 5px;
+	margin:5px;
+	color: #818485;
+}
+
+.myaccount_lnk_list li:hover{
+	cursor: pointer;
+	border: solid 1px #797c7d;
+}
+
+.titre_page{
+	color: #313130;
+	margin-top: 20px;
+}
