@@ -107,10 +107,23 @@
 	margin-bottom:10px;
 	cursor:pointer;
 	text-align:center;
+	padding-bottom: 0px;
 }
 
-.liste .pack .titre:hover{
+.pack .titre:hover{
 	color:#d83028;
+}
+
+.liste .pack .image{
+	display:block;
+	margin-left: 0px;
+	margin-right: 15px;
+	position: relative;
+	height:135px;
+	width:310px;
+	float:left;
+	cursor:pointer;
+	margin-bottom:15px;
 }
 
 .liste .pack .infos{
@@ -121,13 +134,11 @@
 .liste .pack .prix{
 	display:block;
 	margin-left: auto;
-	margin-right: 10px;
 	position: relative;
 	font-family:"Arial", Helvetica, sans-serif;
 	font-size:30px;
 	float:right;
-	margin-top:25px;
-	margin-bottom: 5px;
+	padding-bottom: 15px;
 }
 
 .liste .pack .voirFiche{
@@ -141,6 +152,7 @@
 	cursor:pointer;
 	float: left;
 	margin-top: 0px;
+	padding-bottom: 0px;
 }
 
 .liste .pack .voirFiche:hover{
@@ -157,6 +169,18 @@
 	max-width:1000px;
 	margin-top:0px;
 	background: url(../img/bandeau_jeux.png) no-repeat;
+}
+
+/* bandeau Jeux */ 
+.bandeau_packs{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height:150px;
+	max-width:1000px;
+	margin-top:0px;
+	background: url(../img/bandeau_packs.png) no-repeat;
 }
 
 /* affiner la sélection*/
