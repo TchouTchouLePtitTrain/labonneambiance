@@ -2248,3 +2248,22 @@ tr.subitem > td:first-child + td {
 	padding:0;
 	text-align:center
 }
+
+/* ************************************************************************************************
+		MENTIONS LÉGALES
+************************************************************************************************ */
+
+#mentions-legales{
+	margin-top: 30px;
+}
+
+#mentions-legales p, span{
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:15px;
+	color:#797c7d;
+	line-height: 20px;
+}
+
+#mentions-legales p{
+	margin-left: 100px;
+}
