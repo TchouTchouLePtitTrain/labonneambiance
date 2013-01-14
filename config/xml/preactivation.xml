@@ -87,28 +87,20 @@
 <p style="font-size: 11px;">Dopo aver creato il tuo conto PayPal, vai <b style="color: #D41958;">al "modulo" di pagamento PayPal</b>, <b>imposta</b> le tue opzioni e vai live con una soluzione di pagamento innovativa.</p>
 			]]></description>
 		</descriptions>
-	</partner>	<partner>
-		<name><![CDATA[So Colissimo]]></name>
-		<module>socolissimo</module>
-		<checkconfiguration>
-			<key>SOCOLISSIMO_ID</key>
-			<key>SOCOLISSIMO_KEY</key>
-		</checkconfiguration>
-		<logo>http://api.prestashop.com/partner/premium/images/socolissimo.png</logo>
-		<labels>
-			<label iso="fr">Installez votre module So Colissimo et livrez vos clients !</label>
-		</labels>
-		<descriptions>
-			<description iso="fr"><![CDATA[
-<p><b style="font-size: 12px; margin-bottom: 10px;">Transporteur : So Colissimo (La Poste)</b></p>
-<p style="font-size: 11px; width: 430px; text-align: justify;">Expédiez vos commandes aux meilleurs coûts dans des délais compétitifs grâce à So Colissimo de La Poste :</p>
-<ul style="font-size: 11px;">
-<li><b style="color: #D41958;">5 services de livraison possible</b> (dont les points relais)</li>
-<li>Sans engagement de durée, pas d'abonnement mensuel</li>
-<li>Plus de 500 millions de colis sont expédiés par an par le groupe La Poste</li>
-</ul>
-<p style="font-size: 11px;"><b style="color: #D41958;">Module gratuit</b> développé par PrestaShop</p>
-			]]></description>
-		</descriptions>
-	</partner>
+	</partner><partner>
+	<name><![CDATA[eBay]]></name>
+	<module>ebay</module>
+	<checkconfiguration>
+		<key>EBAY_API_TOKEN%</key>
+	</checkconfiguration>
+	<logo><![CDATA[http://api.prestashop.com/partner/premium/images/ebay.jpg]]></logo>
+	<labels>
+		<label iso="fr"><![CDATA[Augmentez vos ventes et le nombre de vos clients en installant le module eBay !]]></label>
+		<label iso="it"><![CDATA[Installa il modulo eBay e aumenta le tue vendite e i tuoi compratori!]]></label>
+	</labels>
+	<optionals>
+	</optionals>
+	<descriptions>
+	</descriptions>
+</partner>
 </partners>
