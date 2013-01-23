@@ -1,8 +1,11 @@
 .galerie{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	width:490px;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	margin-left:5%;
+	/*width:490px;
+	height:400px;*/
+	width:400px;
 	height:400px;
 	/*background-color:#CCC;*/
 	float:left;
