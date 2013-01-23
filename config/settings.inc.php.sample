@@ -13,6 +13,6 @@ define('_MEDIA_SERVER_3_', '');
 define('_COOKIE_KEY_', '98NoIABQL60CgggQFfntAPHYRjM9Sj9ceMbznmW6mJfZSV0VGZGFfh60');
 define('_COOKIE_IV_', '9ap9EZOZ');
 define('_PS_CREATION_DATE_', '2012-12-04');
-define('_PS_VERSION_', '1.5.2.0');
+define('_PS_VERSION_', '1.5.3.1');
 define('_RIJNDAEL_KEY_', 'xwMBZOf1iMXukcaMqYbUqfcgUiMHsucO');
 define('_RIJNDAEL_IV_', 'RcP9T34JuAX1ERXx0aT6ng==');
