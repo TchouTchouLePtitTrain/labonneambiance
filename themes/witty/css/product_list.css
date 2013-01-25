@@ -87,7 +87,7 @@
 	margin-left: 10px;
 	margin-right: auto;
 	position: relative;
-	padding-bottom:5px;
+	padding-bottom:10px;
 	padding-right:10px;
 	float:left;
 	border-right : solid 1px #f4f4f3;
@@ -131,6 +131,15 @@
 	float:left;
 }
 
+.liste .pack .infos .texte{
+	padding-bottom:10px;
+}
+
+.liste .pack .infos .nom{
+	margin-bottom:0px;
+	padding-bottom: 0px;
+}
+
 .liste .pack .prix{
 	display:block;
 	margin-left: auto;
@@ -151,7 +160,7 @@
 	color:#2f2f2f;
 	cursor:pointer;
 	float: left;
-	margin-top: 0px;
+	margin-top: 15px;
 	padding-bottom: 0px;
 }
 

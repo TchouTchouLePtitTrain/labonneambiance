@@ -7,7 +7,7 @@
 
 			<article class="bandeau_packs">
     			<!-- <img src="img/bandeau_packs.png" alt="Bandeau jeu"/> -->
-			</article>
+    		</article>
 
 			<a class="pack" href="{$product.link|escape:'htmlall':'UTF-8'}">
 
@@ -20,21 +20,17 @@
 					<p class="texte">
 						{$product.description_short|strip_tags:'UTF-8'|truncate:150:'...'}
 					</p>
-					<p class="texte">
 					{foreach from=$product.packItems item=packItem}
-					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
+					<p class="nom" href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}"> - {$packItem.name|escape:'htmlall':'UTF-8'}</p>
 					{/foreach}
-					</p>
 				</div>
 				<p class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</p>
 				<p class="prix">{convertPrice price=$product.price}</p>
 
 			</a>
 
-
 				{else} {* Si c'est un produit *}
-
-				<a class="jeu" href="{$product.link|escape:'htmlall':'UTF-8'}">
+			<a class="jeu" href="{$product.link|escape:'htmlall':'UTF-8'}">
 
 				<img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
 				
@@ -59,7 +55,6 @@
 				<p class="prix">{convertPrice price=$product.price}</p>
 
 			</a>
-
 			{/if}
 
 			{if ($smarty.foreach.products.index + 1) % 3 == 0}
