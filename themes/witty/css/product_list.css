@@ -129,6 +129,7 @@
 .liste .pack .infos{
 	margin-bottom:0px;
 	float:left;
+	width: 100%;
 }
 
 .liste .pack .infos .texte{
