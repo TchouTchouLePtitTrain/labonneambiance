@@ -1,13 +1,10 @@
 {if isset($products)}
 	<!-- Products list -->
 	<section class="liste">
+
 		{foreach from=$products item=product name=products}
 
 		{if $product.pack} {* Si c'est un pack *}
-
-			<article class="bandeau_packs">
-    			<!-- <img src="img/bandeau_packs.png" alt="Bandeau jeu"/> -->
-    		</article>
 
 			<a class="pack" href="{$product.link|escape:'htmlall':'UTF-8'}">
 
