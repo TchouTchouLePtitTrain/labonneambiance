@@ -69,16 +69,22 @@
 			<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country}</span></p>
 		</div>
 		{/if}
-		<div id="bandeau_header"></div>
-		<div id="page">
-
-			<!-- Header -->
-			<header id="header" class="">
+		<div id="bandeau_header">
+			<div class="page">
 				<a class="logo" src="" alt="logo la bonne ambiance" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
+				</a>
+				<p class="accroche">- la boutique ludique</p>
+			</div>
+		</div>
+		<header id="header" class="">
+				<a class="logo_ba" src="" alt="logo la bonne ambiance" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
 				</a>
 				{$HOOK_TOP}
 				<div class="spacer"></div>
 			</header>
+		<div class="page">
+
+			<!-- Header -->
 
 			<div id="columns" class="">
 				<!-- Left -->
