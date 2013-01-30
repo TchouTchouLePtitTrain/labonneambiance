@@ -35,6 +35,7 @@
 </div>
 {else}
 <!-- Block search module TOP -->
+<div id="search_block_filet">
 	<div id="search_block_top">
 
 		<form method="get" action="{$link->getPageLink('search')}" id="searchbox">
@@ -48,6 +49,7 @@
 		</p>
 		</form>
 	</div>
+</div>
 {include file="$self/blocksearch-instantsearch.tpl"}
 {/if}
 <!-- /Block search module TOP -->

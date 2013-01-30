@@ -2,47 +2,40 @@
 
 #header_right #header_user {
 	clear:both;
+	float: right;
 	margin-top:8px;
+	width: 535px;
 }
 
 #header_user #header_nav {
 	list-style-type:none;
-	float: left;
-	margin-left: 15px;
+	float:right;
 }
 
 /* cart */
 #shopping_cart {
-	margin-top:55px;
-	margin-left:0px;
+	margin-top:15px;
+	margin-left:15px;
 	font-family:"Arial", Helvetica, sans-serif;
 	font-weight:bold;
-	font-size:16px;
-	width:266px;
-	position: absolute;
-	display: block;
-	height: 60px;
-	background-color: #202227;
-	float: left;
+	font-size:12px;
+	width:190px;
 }
 
-#shopping_cart:hover {
-	background-color: #32353B;
+.texte_rouge{
+	color:#d83028;
 }
 
 #shopping_cart a{
 	height: 15px;
-	padding:25px 20px 10px 60px;
+	padding:17px 27px 10px 43px;
 	background: url('images/cart.png') no-repeat 10px 15px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;display:block;
-	text-decoration:none;
-	color: #fff;
-}
-
-#shopping_cart a:hover span{text-decoration: none; color:#fff;}
-#header_user #shopping_cart .ajax_cart_quantity { font-weight:bold; font-size:18px; margin-left: 20px; }
+	text-decoration:none;}
+#shopping_cart a:hover span{text-decoration: none; color:#333333;}
+#header_user #shopping_cart .ajax_cart_quantity { font-weight:bold; font-size:18px }
 #header_user #shopping_cart .ajax_cart_total { display:none !important; }
 
 
@@ -51,28 +44,19 @@
 #header_user #your_account a { background-image: url('images/my-account.gif') }
 
 /* user infos */ 
-
-#header_user {
-	position: relative;
-	float: right;
-	width: 280px;
-}
-
 #header_user_info {
-	float:right;
+	float:left;
 	margin-left:10px;
 	font-size:12px;
 	display:block;
-	height:20px;
-	width:auto;
-	padding:20px 10px 0px 40px;
+	height:30px;
+	width:100px;
+	padding:40px 10px 0px 10px;
+	border-left:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+	text-align:center;
 	font-family:"Arial", Helvetica, sans-serif;
 	font-weight:bold;
-	background-color: #32353b;
-}
-
-#header_user_info:hover {
-	background-color: #D83608;
 }
 
 #header_user_info :hover{
@@ -84,6 +68,7 @@
 }
 #header_user_info a.account {
 	border: none;
-	background: url('images/login.png') no-repeat 21px;
+	background: url('images/login.gif') no-repeat 30px 0;
+	padding-top:20px;
 }
 *:first-child+html #header_user_info a {line-height:14px;}

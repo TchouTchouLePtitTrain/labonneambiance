@@ -5,12 +5,13 @@
 	display: none;
 }
 #header #cart_block {
+	z-index: 10;
 	display:none;
 	position: absolute;
-	right: -1px;
-	top: 115px;
+	right: 0;
+	top: 65px;
 	height: auto;
-	width: 266px;
+	width: 200px;
 	-moz-border-bottom-right-radius: 3px;
 	-moz-border-bottom-left-radius: 3px;
 	-webkit-border-bottom-right-radius: 3px;
@@ -19,8 +20,7 @@
 	border-bottom-left-radius: 3px;
 	box-shadow: 0 1px 0 #C6C6C6;
 	background:#eee;
-	float: right;
-	z-index: 10;
+	margin: 6px 7px 0 0;
 }
 #cart_block.cart_block_hover {display:block}
 #cart_block h4 span {
@@ -29,7 +29,7 @@
 	text-transform: none;
 	background-position: left top;
 	background-repeat: no-repeat;
-	cursor: pointer;
+	cursor: pointer
 }
 
 #cart_block  .block_content {padding:8px 8px 16px 8px;}

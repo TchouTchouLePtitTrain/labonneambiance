@@ -1,11 +1,11 @@
 /* Style d'éléments de mise en page génériques */
 body{
 	margin: 0;
-    background-color:#F2F2F2;
+    background-color:#FFF;
 }
 
 
-.page{
+#page{
 	display: block;
 	width: 1000px;
 	height: auto;
@@ -199,7 +199,7 @@ a {cursor:pointer}
 body{
 	font:normal 11px/14px Arial, Verdana, sans-serif;
 	color:#222;
-	background:#f2f2f2;
+	background:#fff
 }
 
 /* positionnement ****************************************************************************** */
@@ -670,63 +670,27 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 	display:block;
 	position:absolute;
 	top:0px;
-	height:40px;
+	height:70px;
 	width:100%;
-	background-color:#202227;
+	background-color:#f8f8f8;
+	border-bottom: solid 1px #e7e7e7;
 }
 	
 #header {
-	display: block;
-	height: 220px;
-	width: 1000px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	margin-bottom: 30px;
-	background-color: #fff;
-	margin-left: auto;
-	margin-right: auto;
+	position:relative;
 }
-#bandeau_header .logo {
+#header .logo {
 	float:left;
 	display:block;
-	margin-top:8px;
-	background:url(../img/logo_bonneambiance_normal.png);
-	height:27px;
-	width:173px;
-}
-
-#bandeau_header .logo:hover {
-	background:url(../img/logo_bonneambiance_hover.png);
-}
-
-#header .logo_ba{
-	float:left;
-	display:block;
-	margin-top:55px;
-	background:url(../img/ba.png);
-	height:150px;
-	width:170px;
-	position: relative;
-	z-index:9999;
-}
-
-#bandeau_header .accroche{
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:14px;
-	color:#797c7d;
-	float: left;
-	margin-top:18px;
-	margin-left: 2px;
-	padding-bottom: 0px;
+	margin-top:15px;
+	background:url(../img/logo_bonneambiance.png);
+	height:41px;
+	width:297px;
 }
 
 #header_right {
 	position:relative;
 	float: right
-}
-
-#header_user_info a{
-	color: #fff;
 }
 
 
