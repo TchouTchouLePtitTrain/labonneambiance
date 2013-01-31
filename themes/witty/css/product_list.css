@@ -1,171 +1,151 @@
-/* Jeux liste */
+.liste{
+	display: block;
+	padding-top: 30px;
+}
+
+.jeu .image{
+	display: block;
+	width: 170px;
+	height: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .jeu{
-	display:block;
-	width:245px;
-	margin-top:20px;
-	margin-left: 20.6px;
-	margin-right: auto;
+	display: block;
 	position: relative;
-	padding-bottom:10px;
-	float:left;
-	border-right : solid 1px #f4f4f3;
-	border-bottom : solid 1px #f4f4f3;
-	cursor: pointer;
-}
-
-.jeu:hover .titre{
-	color:#d83028;
-}
-
-.jeu .prix{
-	display:block;
-	margin-left: auto;
-	margin-right: 10px;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	float:right;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.liste .jeu .prix{
-	padding-bottom: 0px;
-}
-
-.liste .jeu .lien_image{
-	display:block;
-	width:84px;
-	height:84px;
-}
-.liste .jeu .image{
-	background-color: #000000;
+	background-color: white;
+	width:180px;
+	height: 267px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0px 10px 20px 10px;
     cursor: pointer;
-    display: block;
     float: left;
-    height: 84px;
-    /*margin-bottom: 5px;*/
-    margin-left: 0;
-    margin-right: 15px;
-    position: relative;
-    width: 84px;
-}
-.liste .jeu .infos{
-    display: block;
-    font-family: "Arial",Helvetica,sans-serif;
-    position: relative;
-}
-.liste .jeu .infos h2.titre{
-	padding-bottom: 0;
-}
-.liste .jeu .infos .caracteristiques{
-	color: #797C7D;
-    display: block;
-    margin-left: 100px;
-    font-size: 12px;
-    margin-bottom: 7px;
-    position: relative;
-	list-style-type: none;
 }
 
-.liste .jeu .infos .texte{
-	margin: 20px 0px 0px 0px;
-	padding-bottom:15px;
+.jeu .bloc{
+	padding: 20px 20px 0px 20px;
 }
 
-.liste .jeu .voirFiche{
-	padding-bottom:0px;
-}
-
-/* Packs liste */
-
-.liste .pack{
-	display:block;
-	width:312px;
-	margin-top:20px;
-	margin-left: 10px;
-	margin-right: auto;
+.jeu .bas{
 	position: relative;
-	padding-bottom:10px;
-	padding-right:10px;
-	float:left;
-	border-right : solid 1px #f4f4f3;
-	border-bottom : solid 1px #f4f4f3;
-	cursor: pointer;
+	display: block;
+	border-top: solid 1px #dfdfdf;
+	bottom:0;
+	width: 136px;
+	height:46px;
+	background-color: #fff;
 }
 
-.liste .pack .titre{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	color:#3d3d3d;
-	margin-top: 0px;
-	margin-bottom:10px;
-	cursor:pointer;
-	text-align:center;
-	padding-bottom: 0px;
-}
-
-.pack .titre:hover{
-	color:#d83028;
-}
-
-.liste .pack .image{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	height:135px;
-	cursor:pointer;
-	margin-bottom:15px;
-}
-
-.liste .pack .infos{
-	margin-bottom:0px;
-	float:left;
-	width: 100%;
-}
-
-.liste .pack .infos .texte{
-	padding-bottom:10px;
-}
-
-.liste .pack .infos .nom{
-	margin-bottom:0px;
-	padding-bottom: 0px;
-}
-
-.liste .pack .prix{
-	display:block;
-	margin-left: auto;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:30px;
-	float:right;
+.jeu .titre{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	color: #202227;
+	margin-top: 10px;
+	height: 15px;
+	margin:0;
 	padding-bottom: 15px;
 }
 
-.liste .pack .voirFiche{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:11px;
-	color:#2f2f2f;
-	cursor:pointer;
+.jeu .bas .prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #202227;
 	float: left;
-	margin-top: 15px;
+	margin-top: 17px;
+}
+
+.savoirplus{
+	float: right;
+	margin-top: 8px;
+	background-image:url(../img/plus.png);
+	height: 38px;
+	width: 38px;
+	cursor: pointer;
+}
+
+.jeu .infos{
+	height: auto;
+	margin:0;
+	padding-bottom: 15px;
+}
+
+.jeu .caracteristiques{
+	font-family: Arial;
+	font-size: 12px;
+	color: #797c7d;
+}
+
+.jeu .caracteristiques p{
 	padding-bottom: 0px;
 }
 
-.liste .pack .voirFiche:hover{
-	text-decoration:underline;
+.jeu .hover .acheter{
+	display: block;
+	border-top: solid 1px #dfdfdf;
+	border-bottom: solid 1px #dfdfdf;
+	padding-top: 20px;
 }
+
+.jeu .hover .acheter .texte_prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #797c7d;
+	float: left;
+}
+
+.jeu .hover .acheter .prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #202227;
+	float: right;
+}
+
+.btn_ajouter{
+	display: block;
+	background-image:url(../img/btn_acheter_normal.png);
+	height: 32px;
+	width: 136px;
+	cursor: pointer;
+	margin: 12px auto 0px;
+}
+
+.btn_ajouter:hover{
+	background-image:url(../img/btn_acheter_hover.png);
+}
+
+.jeu .hover{
+	display: none;
+	position: absolute;
+	top:221px;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	z-index: 9999;
+	width: 140px;
+}
+
+.jeu:hover .hover{
+	display: block;
+	z-index: 9999;
+}
+
+.jeu:hover .titre{
+	color: #d8331d;
+}
+
+.jeu ul li{
+	display:block;
+	text-decoration: none;
+	padding: 0;
+}
+
+
 
 /* bandeau Jeux */ 
 .bandeau_jeux{

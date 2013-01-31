@@ -63,38 +63,168 @@
 section.produitsPhares{
 	display:block;
 	height:auto;
-	width:322px;
-	margin-top:0px;
-	margin-left: 0px;
-	margin-right: 12px;
+	width:100%;
+	margin-top:50px;
 	position: relative;
-	border : solid 1px #e2dddb;
-	float:left;
 }
 
 .produitsPhares .titreProduitsPhares{
 	display:block;
-	margin-left: -1px;
-	margin-right: auto;
 	position: relative;
-	background-image: url(images/titre_bloc_phare_normal.png);
-	height:77px;
-	width:324px;
+	float: left;
+	color: 202227;
+	font-size: 22px;
+	margin-bottom: 50px;
 }
 
-.produitsPhares .titreProduitsPhares:hover{
-	background-image: url(images/titre_bloc_phare_hover.png);
+.produitsPhares h2{
+	padding-bottom: 0px;
 }
 
-
-.produitsPhares .prix{
-	display:block;
+.produitsPhares .jeu .image{
+	display: block;
+	width: 170px;
+	height: 170px;
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: auto;
+}
+
+.produitsPhares .jeu{
+	display: block;
 	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	float:right;
-	margin-top: 5px;
-	margin-bottom: 0px;
+	background-color: white;
+	width:180px;
+	height: 275px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0px 10px 20px 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.produitsPhares .jeu .bloc{
+	padding: 0px 20px 0px 20px;
+}
+
+.produitsPhares .jeu .bas{
+	position: relative;
+	display: block;
+	border-top: solid 1px #dfdfdf;
+	bottom:0;
+	width: 136px;
+	height:46px;
+	background-color: #fff;
+}
+
+.produitsPhares .jeu .bas p{
+	padding-bottom: 0px;
+}
+
+.produitsPhares .jeu .titre{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	color: #202227;
+	margin-top: 10px;
+	height: 15px;
+	margin:0;
+	padding-bottom: 15px;
+}
+
+.produitsPhares .jeu .bas .prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #202227;
+	float: left;
+	margin-top: 20px;
+}
+
+.produitsPhares .savoirplus{
+	float: right;
+	margin-top: 8px;
+	background-image:url(images/plus.png);
+	height: 38px;
+	width: 38px;
+	cursor: pointer;
+}
+
+.produitsPhares .jeu .infos{
+	height: auto;
+	margin:0;
+	border-top: solid 1px #dfdfdf;
+	padding-top: 15px;
+	padding-bottom: 0px;
+}
+
+.produitsPhares .jeu .caracteristiques{
+	font-family: Arial;
+	font-size: 12px;
+	color: #797c7d;
+}
+
+.produitsPhares .jeu .caracteristiques p{
+	padding-bottom: 0px;
+}
+
+.produitsPhares .jeu .hover .acheter{
+	display: block;
+	border-top: solid 1px #dfdfdf;
+	border-bottom: solid 1px #dfdfdf;
+	padding-top: 20px;
+}
+
+.produitsPhares .jeu .hover .acheter .texte_prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #797c7d;
+	float: left;
+}
+
+.produitsPhares .jeu .hover .acheter .prix{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #202227;
+	float: right;
+}
+
+.produitsPhares .btn_ajouter{
+	display: block;
+	background-image:url(images/btn_acheter_normal.png);
+	height: 32px;
+	width: 136px;
+	cursor: pointer;
+	margin: 12px auto 0px;
+}
+
+.produitsPhares .btn_ajouter:hover{
+	background-image:url(images/btn_acheter_hover.png);
+}
+
+.produitsPhares .jeu .hover{
+	display: none;
+	position: absolute;
+	top:275px;
+	background-color: white;
+	padding: 0px 20px 20px 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	z-index: 9999;
+	width: 140px;
+}
+
+.produitsPhares .jeu:hover .hover{
+	display: block;
+	z-index: 9999;
+}
+
+.produitsPhares .jeu:hover .titre{
+	color: #d8331d;
+}
+
+.produitsPhares .jeu ul li{
+	display:block;
+	text-decoration: none;
+	padding: 0;
 }

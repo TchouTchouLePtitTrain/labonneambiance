@@ -1,37 +1,20 @@
 section.nouveautes{
 	display:block;
 	height:auto;
-	width:322px;
-	margin-top:0px;
-	margin-left: 0px;
-	margin-right: 12px;
+	width:100%;
+	margin-top:50px;
 	position: relative;
-	border : solid 1px #e2dddb;
-	float:left;
 }
 
 .nouveautes .titreNouveautes{
 	display:block;
-	margin-left: -1px;
-	margin-right: auto;
 	position: relative;
-	background-image: url(../images/titre_bloc_nouveaute_normal.png);
-	height:77px;
-	width:324px;
+	float: left;
+	color: 202227;
+	font-size: 22px;
+	margin-bottom: 50px;
 }
 
-.nouveautes .titreNouveautes:hover{
-	background-image: url(../images/titre_bloc_nouveaute_hover.png);
-}
-
-.nouveautes .prix{
-	display:block;
-	margin-left: auto;
-	margin-right: 10px;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	float:right;
-	margin-top: 5px;
-	margin-bottom: 0px;
+.nouveautes h2{
+	padding-bottom: 0px;
 }
