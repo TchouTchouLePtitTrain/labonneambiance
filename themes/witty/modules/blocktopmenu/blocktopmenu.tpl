@@ -3,7 +3,6 @@
 	display:block;
 	height:50px;
 	width:100%;
-	background-color:#fff;
 	margin-left:auto;
 	margin-right:auto;
 	border-bottom: solid 4px #313130;

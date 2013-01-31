@@ -1,7 +1,9 @@
 /* Style d'éléments de mise en page génériques */
 body{
-	margin: 0;
-    background-color:#FFF;
+	font:normal 11px/14px Arial, Verdana, sans-serif;
+	color:#222;
+	padding, margin: 0;
+    background-color:#f2f2f2;
 }
 
 
@@ -196,11 +198,6 @@ a {cursor:pointer}
 /* ************************************************************************************************
 		generic style
 ************************************************************************************************ */
-body{
-	font:normal 11px/14px Arial, Verdana, sans-serif;
-	color:#222;
-	background:#fff
-}
 
 /* positionnement ****************************************************************************** */
 .hidden {display:none}
@@ -672,8 +669,9 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 	top:0px;
 	height:70px;
 	width:100%;
-	background-color:#f8f8f8;
+	background-color:#fff;
 	border-bottom: solid 1px #e7e7e7;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 	
 #header {
@@ -712,8 +710,15 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 		FOOTER
 ************************************************************************************************ */
 #footer {
-	/*color:#fff;
-	background:#333*/
+	background-color:#fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#footer #content_footer {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
 }
 	.blockcategories_footer,
 	#footer .myaccount ,
@@ -748,10 +753,9 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 .infos_footer{
 	display:block;
 	width:100%;
-	margin-top:15px;
-	height:30px;
-	border-top:1px solid #E2DDDB;
+	height:40px;
 	float:left;
+	padding-top:35px;
 }
 
 #footer .myaccount {padding: 15px 10px}
