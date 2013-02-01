@@ -3,7 +3,8 @@ body{
 	font:normal 11px/14px Arial, Verdana, sans-serif;
 	color:#222;
 	padding, margin: 0;
-    background-color:#f2f2f2;
+    /* background-color:#f2f2f2; */
+    background: url(../img/bg2.png);
 }
 
 

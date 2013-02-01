@@ -16,7 +16,7 @@
 	position: relative;
 	background-color: white;
 	width:180px;
-	height: 267px;
+	height: 255px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0px 10px 20px 10px;
     cursor: pointer;
@@ -24,7 +24,7 @@
 }
 
 .jeu .bloc{
-	padding: 20px 20px 0px 20px;
+	padding: 0px 15px 0px 15px;
 }
 
 .jeu .bas{
@@ -32,15 +32,19 @@
 	display: block;
 	border-top: solid 1px #dfdfdf;
 	bottom:0;
-	width: 136px;
+	width: 100%;
 	height:46px;
 	background-color: #fff;
+}
+
+.jeu .bas p{
+	padding-bottom: 0px;
 }
 
 .jeu .titre{
 	font-family: Arial;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 16px;
 	text-align: center;
 	color: #202227;
 	margin-top: 10px;
@@ -49,28 +53,38 @@
 	padding-bottom: 15px;
 }
 
+.jeu .titre:hover{
+	text-decoration: underline;
+}
+
 .jeu .bas .prix{
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 16px;
 	color: #202227;
 	float: left;
-	margin-top: 17px;
+	margin-top: 20px;
 }
 
-.savoirplus{
+.ajouter{
 	float: right;
 	margin-top: 8px;
-	background-image:url(../img/plus.png);
+	background-image:url(../img/btn_ajouter_normal.png);
 	height: 38px;
-	width: 38px;
+	width: 50px;
 	cursor: pointer;
+}
+
+.ajouter:hover{
+	background-image:url(../img/btn_ajouter_hover.png);
 }
 
 .jeu .infos{
 	height: auto;
 	margin:0;
-	padding-bottom: 15px;
+	border-top: solid 1px #dfdfdf;
+	padding-top: 15px;
+	padding-bottom: 0px;
 }
 
 .jeu .caracteristiques{
@@ -106,28 +120,15 @@
 	float: right;
 }
 
-.btn_ajouter{
-	display: block;
-	background-image:url(../img/btn_acheter_normal.png);
-	height: 32px;
-	width: 136px;
-	cursor: pointer;
-	margin: 12px auto 0px;
-}
-
-.btn_ajouter:hover{
-	background-image:url(../img/btn_acheter_hover.png);
-}
-
 .jeu .hover{
 	display: none;
 	position: absolute;
-	top:221px;
+	top:255px;
 	background-color: white;
-	padding: 20px;
+	padding: 0px 15px 15px 15px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	z-index: 9999;
-	width: 140px;
+	width: 150px;
 }
 
 .jeu:hover .hover{
@@ -135,17 +136,11 @@
 	z-index: 9999;
 }
 
-.jeu:hover .titre{
-	color: #d8331d;
-}
-
 .jeu ul li{
 	display:block;
 	text-decoration: none;
 	padding: 0;
 }
-
-
 
 /* bandeau Jeux */ 
 .bandeau_jeux{

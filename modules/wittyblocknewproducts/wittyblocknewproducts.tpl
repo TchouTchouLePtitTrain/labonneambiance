@@ -10,7 +10,7 @@
 	            	<h2 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h2>
 	            	<div class="bas">
 	                	<p class="prix">{convertPrice price=$product.price}</p>
-	                	<div class="savoirplus" src="" alt=""> </div> 
+	                	<div class="ajouter" src="" alt=""> </div> 
 	            	</div>
 	            </div>
 		        <div class="hover">
@@ -24,13 +24,6 @@
 		                    </div>
 		                     </div>
 		                    {/if}
-		            <div class="acheter">
-		                <p class="texte_prix">Prix :</p>
-		                <p class="prix">{convertPrice price=$product.price}</p>
-		                <div class="spacer"></div>
-		            </div>
-		            <div class="btn_ajouter" src="" alt="">
-		        </div>
 		        </div>
 		    </a>
 
@@ -42,7 +35,7 @@
 	            	<h2 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h2>
 	            	<div class="bas">
 	                	<p class="prix">{convertPrice price=$product.price}</p>
-	                	<div class="savoirplus" src="" alt=""> </div> 
+	                	<div class="ajouter" src="" alt=""> </div> 
 	            	</div>
 	            </div>
 		        <div class="hover">
@@ -56,14 +49,7 @@
 		                            {/foreach}
 		                        </ul>
 		                    </div>
-		                    {/if}
-		            <div class="acheter">
-		                <p class="texte_prix">Prix :</p>
-		                <p class="prix">{convertPrice price=$product.price}</p>
-		                <div class="spacer"></div>
-		            </div>
-		            <div class="btn_ajouter" src="" alt="">
-		        </div>
+		                    {/if} 
 		        </div>
 		    </a>
 
