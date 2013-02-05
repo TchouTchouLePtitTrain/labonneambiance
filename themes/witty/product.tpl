@@ -229,13 +229,13 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 							{* Il y a une marge sur les p, va savoir pourquoi, du coup pour le moment on change en balise <a> <p class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p> *}
 							<a class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></a>
 						{/if}
-						<p class="stock">Stock : Disponible</p>
 					{/if}
 
 					{* Bouton d'ajout au panier *}
 					{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
 						<p class="indisponible">Ce jeu n'est pas disponible</p>
 					{else}
+						<p class="stock">Stock : Disponible</p>
 						<input id="add_to_cart" type="submit" name="Submit" class="btn_ajouterPanier" value=""/>
 					{/if}
 					{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
