@@ -1,3 +1,5 @@
+.htaccess
+
 # cache/* On n'ignore pas le dossier de cache cara il y a un .gitignore dans ce dossier (pour pouvoir versionner le dossier de cache mais pas son contenu -> utilité : avoir le dossier de cache créé lorsque l'on clone le projet)
 img/tmp/
 config/config.inc.php
