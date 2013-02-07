@@ -166,6 +166,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{$confirmation}
 		</p>
 	{/if}
+<<<<<<< HEAD
 	
 	<!-- right infos-->
 	<div id="pb-right-column">
@@ -177,6 +178,18 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 				<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
 			{/if}
 		</div>
+=======
+
+<div class="fiche">
+	<!-- product img-->
+	<div class="galerie">
+
+		{if $have_image}
+			<img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')}" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic"/>
+		{else}
+			<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
+		{/if}
+>>>>>>> Header - New charte
 		
 		{if isset($images) && count($images) > 0}
 			<!-- thumbnails -->
@@ -279,7 +292,9 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
         <div class="filet"></div>
         {$product->description}
 	</section>
-	
+	<div class="spacer"></div>
+</div>	
+
     <div class="spacer"> </div>
 </div>
 

@@ -1,12 +1,15 @@
 <style>
 #menutop{
-	display:block;
-	height:50px;
-	width:100%;
-	margin-left:auto;
-	margin-right:auto;
-	border-bottom: solid 4px #313130;
-	margin-top:10px;
+	border-right: 1px solid #E7E7E7;
+    display: block;
+    float: left;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-right: 0;
+    padding-top: 12px;
+    width: 500px;
 }
 
 #menutop li{
@@ -17,33 +20,32 @@
 }
 
 #menutop li a{
-	font-size:15px;
-	color:#999;
+	font-size:16px;
+	color:#bebebe;
 	display:block;
 	margin-top:15px;
-	margin-right:30px;
-	margin-left:10px;
+	margin-right:45px;
+	margin-left:45px;
+	font-weight: bold;
 }
 
 #menutop li a:link{
-	color:#313130;
+	color:#bebebe;
 }
 
 #menutop li a:visited{
-	color:#313130;
+	color:#bebebe;
 }
 
 #menutop li a:active{
-	color:#D8331D;
+	color:#313130;
 }
 
 #menutop li a:hover{
-	color:#D8331D;
+	color:#313130;
 }
 
 </style>
-
-<div class="spacer"></div>
 
 <nav>
 	<ul id="menutop">

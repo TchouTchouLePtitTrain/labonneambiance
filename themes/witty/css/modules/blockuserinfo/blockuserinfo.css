@@ -8,33 +8,35 @@
 }
 
 #header_user #header_nav {
-	list-style-type:none;
-	float:right;
+	background: url("images/panier.png") repeat scroll 0 0 transparent;
+    float: right;
+    height: 115px;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    width: 285px;
 }
 
 /* cart */
 #shopping_cart {
-	margin-top:15px;
-	margin-left:15px;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-weight:bold;
-	font-size:12px;
-	width:190px;
-}
-
-.texte_rouge{
-	color:#d83028;
+	font-family: "Arial",Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 40px;
+    width: 190px;
 }
 
 #shopping_cart a{
+	color: white;
 	height: 15px;
-	padding:17px 27px 10px 43px;
-	background: url('images/cart.png') no-repeat 10px 15px;
+	padding:17px 7px 10px 30px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;display:block;
 	text-decoration:none;}
-#shopping_cart a:hover span{text-decoration: none; color:#333333;}
+#shopping_cart a:hover span{text-decoration: underline;}
 #header_user #shopping_cart .ajax_cart_quantity { font-weight:bold; font-size:18px }
 #header_user #shopping_cart .ajax_cart_total { display:none !important; }
 
@@ -45,18 +47,17 @@
 
 /* user infos */ 
 #header_user_info {
-	float:left;
-	margin-left:10px;
-	font-size:12px;
-	display:block;
-	height:30px;
-	width:100px;
-	padding:40px 10px 0px 10px;
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	text-align:center;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-weight:bold;
+    border-right: 1px solid #E7E7E7;
+    display: block;
+    font-family: "Arial",Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 30px 10px 0;
+    text-align: center;
+    width: auto;
 }
 
 #header_user_info :hover{
@@ -68,7 +69,7 @@
 }
 #header_user_info a.account {
 	border: none;
-	background: url('images/login.gif') no-repeat 30px 0;
-	padding-top:20px;
+	background: url('images/login.gif') no-repeat 0px 0;
+	padding-left: 30px;
 }
 *:first-child+html #header_user_info a {line-height:14px;}
