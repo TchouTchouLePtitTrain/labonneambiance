@@ -104,7 +104,7 @@
 			*}
 			
 			{if ($category->id == 3)}
-				{* include file="./filter-list.tpl" *}
+				{include file="./filter-list.tpl"}
 			{/if}
 
 			{if ($category->id == 5)}
