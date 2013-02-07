@@ -1,5 +1,5 @@
 <section class="produitsPhares">
-	<h2 class="titreProduitsPhares" href="{$link->getCategoryLink(3)}">Produits phares - Les jeux que l'on vous recommande.</h2>
+	<div class="titreProduitsPhares" href="{$link->getCategoryLink(3)}" src="" alt=""> </div>
 	<div class="spacer"></div>
 	{foreach from=$products item=product name=myLoop}
 

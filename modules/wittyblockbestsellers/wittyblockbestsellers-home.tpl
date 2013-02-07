@@ -1,5 +1,5 @@
 <section class="meilleuresVentes">
-	<h2 class="titreMeilleuresVentes" href="{$link->getPageLink('best-sales')}">Meilleures ventes - Dans la famille "Incontournable", je voudrais :</h2>
+	<div class="titreMeilleuresVentes" href="{$link->getPageLink('best-sales')}" src="" alt=""> </div>
 	<div class="spacer"></div>
 	{foreach from=$best_sellers item=product name=myLoop}
 

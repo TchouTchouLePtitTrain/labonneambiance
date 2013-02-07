@@ -1,5 +1,5 @@
 <section class="nouveautes">
-	<h2 class="titreNouveautes" href="{$link->getCategoryLink(3)}">Nouveautés - Plus il y a de choix, mieux c'est.</h2>
+	<div class="titreNouveautes" href="{$link->getCategoryLink(3)}" src="" alt=""> </div>
 	<div class="spacer"></div>
 	{foreach from=$new_products item=product}
 

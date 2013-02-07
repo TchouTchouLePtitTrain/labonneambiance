@@ -72,10 +72,12 @@ section.produitsPhares{
 .produitsPhares .titreProduitsPhares{
 	display:block;
 	position: relative;
-	float: left;
-	color: 202227;
-	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 50px;
+	background-image:url(images/titre_recommande.png);
+	height:40px;
+	width:1000px;
 }
 
 .produitsPhares h2{

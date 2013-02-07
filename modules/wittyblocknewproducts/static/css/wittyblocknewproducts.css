@@ -9,10 +9,12 @@ section.nouveautes{
 .nouveautes .titreNouveautes{
 	display:block;
 	position: relative;
-	float: left;
-	color: 202227;
-	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 50px;
+	background-image:url(../images/titre_nouveaute.png);
+	height:40px;
+	width:1000px;
 }
 
 .nouveautes h2{
