@@ -61,6 +61,8 @@
 			{/if}
 		{/foreach}
 	</section>
+	<div class="spacer"></div>
 	<!-- /Products list -->
+
 {/if}
 <div class="spacer"></div>
