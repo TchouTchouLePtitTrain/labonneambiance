@@ -148,9 +148,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	height:150px;
+	height:40px;
 	max-width:1000px;
-	margin-top:0px;
+	margin-top:30px;
+	margin-bottom:30px;
 	background: url(../img/bandeau_jeux.png) no-repeat;
 }
 
@@ -160,9 +161,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	height:150px;
+	height:40px;
 	max-width:1000px;
-	margin-top:0px;
+	margin-top:30px;
+	margin-bottom:30px;
 	background: url(../img/bandeau_packs.png) no-repeat;
 }
 
