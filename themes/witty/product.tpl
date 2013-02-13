@@ -166,8 +166,13 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{$confirmation}
 		</p>
 	{/if}
-<<<<<<< HEAD
 	
+
+
+
+<div class="fiche">
+
+	{*
 	<!-- right infos-->
 	<div id="pb-right-column">
 		<!-- product img-->
@@ -178,10 +183,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 				<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
 			{/if}
 		</div>
-=======
-
-
-<div class="fiche">
+		*}
+	
 	<!-- product img-->
 	<div class="galerie">
 
@@ -190,8 +193,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		{else}
 			<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
 		{/if}
->>>>>>> Header - New charte
-		
+	
+	
 		{if isset($images) && count($images) > 0}
 			<!-- thumbnails -->
 			<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
@@ -281,14 +284,14 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 					{else}
 					<ul class="gauche"> <!-- Mettre ici le nombre de joueurs, l'age et la durée de jeu -->
 						{foreach from=$features item=feature}
-							{if isset($feature.value)}
+							{if (isset($feature.value) and ($feature.name == 'Nb. de joueurs' or $feature.name == 'Age' or $feature.name == 'Durée'))}
 								<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
 							{/if}
 						{/foreach}
 					</ul>
 					<ul class="droite"> <!-- Mettre ici le theme, l'éditeur et l'auteur -->
 						{foreach from=$features item=feature}
-							{if isset($feature.value)}
+							{if (isset($feature.value) and ($feature.name == 'Editeur' or $feature.name == 'Thème' or $feature.name == 'Auteur'))}
 								<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
 							{/if}
 						{/foreach}
