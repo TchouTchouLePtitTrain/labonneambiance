@@ -141,7 +141,7 @@ class WittyBlockBestSellers extends Module
 			return;
 
 		$currency = new Currency($params['cookie']->id_currency);
-		$bestsellers = ProductSale::getBestSalesLight((int)$params['cookie']->id_lang, 0, 4);
+		$bestsellers = ProductSale::getBestSalesLight((int)$params['cookie']->id_lang, 0, 5);
 		if (!$bestsellers && !Configuration::get('PS_BLOCK_BESTSELLERS_DISPLAY'))
 			return;
 		$best_sellers = array();

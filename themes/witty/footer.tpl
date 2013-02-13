@@ -35,7 +35,11 @@
 
 <!-- Footer -->
 			<div class="spacer"></div>
-			<div id="footer">{$HOOK_FOOTER}</div>
+		</div>
+		<div id="footer">
+			<div id="content_footer">
+				{$HOOK_FOOTER}
+			</div>
 		</div>
 	{/if}
 	

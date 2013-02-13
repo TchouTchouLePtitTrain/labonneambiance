@@ -31,6 +31,7 @@
 	{if $best_sellers|@count > 0}
 		<ul class="product_images">
 			{foreach from=$best_sellers item=product name=myLoop}
+
 			<li class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if} clearfix">
 				<a href="{$product.link}" title="{$product.legend|escape:'htmlall':'UTF-8'}" class="content_img clearfix">
 					<span class="number">{$smarty.foreach.myLoop.iteration}</span>
@@ -42,6 +43,7 @@
 					<span class="price">{$product.price}</span>
 				</a></p>
 			</li>
+			
 		{/foreach}
 		</ul>
 		<p class="lnk"><a href="{$link->getPageLink('best-sales')}" title="{l s='All best sellers' mod='blockbestsellers'}" class="button_large">&raquo; {l s='All best sellers' mod='blockbestsellers'}</a></p>
