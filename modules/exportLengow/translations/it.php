@@ -1,0 +1,43 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{exportLengow}prestashop>exportlengow_82b5a57b2835fad00a30bafb01d328b7'] = 'Informazioni: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_f153d92c82352821bc659e5b8c753288'] = 'URL del tuo catalogo prodotti: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_0392e77d19d8f4c2f2cd5c93ce4dc87c'] = 'URL del tuo catalogo prodotti con le variazioni: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_574e0b7aece74215db65b0ee26ab58da'] = 'Lengow : export del tuo catalogo prodotti';
+$_MODULE['<{exportLengow}prestashop>exportlengow_0a739b221caaa9ed4dbc0ef59edc359a'] = 'Lengow è una soluzione SaaS che permette ai siti commerciali di ottimizzare i loro cataloghi prodotto inviati ai comparatori prezzi, piattaforme di affiliazione, marketplaces ma anche links sponsorizzati, social networks e blogs.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_7078c3438bb46fdab36587050053cacf'] = 'Il principio è che la soluzione ricupera il catalogo prodotti del sito comerciale, configura, ottimizza e traccia le informazioni delle campagne e-commerce e restituisce al cliente le statistiche nel pannello di controllo.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_4116f2e6b08ae5aae73ed7f399cf45ee'] = 'Questo processo permette ai siti commerciali di ottimizzare i loro flussi e i loro investimenti marketing.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_9a71923a8dbd55e9f3e4b2225ed7f2dd'] = 'Esporta il tuo catalogo prodotti  verso i comparatori prezzi, marketplaces, piattaforme di affiliazione, social network, blogs e links sponsorizzati. ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_4cc7b2483088b9f51e2b7d11603d7bd7'] = 'Sei sicuro di volere disinstallare il modulo Lengow?';
+$_MODULE['<{exportLengow}prestashop>exportlengow_1b5e4f9b07ad87029a7f94ce4006b1da'] = 'Il modulo Lengow non deve essere rinominato;';
+$_MODULE['<{exportLengow}prestashop>exportlengow_365589d7ae6168a24ff2de3c924149ed'] = 'Soluzione Lengow';
+$_MODULE['<{exportLengow}prestashop>exportlengow_2c251c08b2589ac8a4dc78150b423417'] = 'Scegli le tue categorie e i prodotti da esportare: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_fcd47c11a73886a4fe3840db0ba9d6ad'] = 'Albero delle categorie: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_c9cc8cce247e49bae79f15173ce97354'] = 'Salvare';
+$_MODULE['<{exportLengow}prestashop>exportlengow_deb10517653c255364175796ace3553f'] = 'Prodotto';
+$_MODULE['<{exportLengow}prestashop>exportlengow_629709b86fd09c134ba328eeeeef63cc'] = 'Sei cliente Lengow? Inserisci il tuo ID: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_b01bcbd0500cda4c67a727b6cd61754e'] = 'Il tuo ID deve essere un numero intero > 0';
+$_MODULE['<{exportLengow}prestashop>exportlengow_a27373b8e74f6483f3c6615caf08ec79'] = 'Il tuo Group ID deve essere un numero intero > 0';
+$_MODULE['<{exportLengow}prestashop>exportlengow_bc74aa3ba771ee7e1adf49a9430083ff'] = 'Scegli la lingua da utilizzare nell’export: ';
+$_MODULE['<{exportLengow}prestashop>exportlengow_5e9df908eafa83cb51c0a3720e8348c7'] = 'Selezionare tutti i prodotti';
+$_MODULE['<{exportLengow}prestashop>exportlengow_9747d23c8cc358c5ef78c51e59cd6817'] = 'Deselezionare tutti i prodotti';
+$_MODULE['<{exportLengow}prestashop>exportlengow_07e5a123264f67e171d0493ba8774875'] = 'Indicando il tuo ID Lengow e il tuo Group ID, potrai inserire il tag di conversione <a href="http://www.lengow.fr/tagcapsule.html" target="_blank" style="color:black;text-decoration:underline">TagCapsule</a> automaticamente su tutte le pagine della tua boutique.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_c2410ff87789464f6533bafeb9f79273'] = 'Dove trovare i miei ID?';
+$_MODULE['<{exportLengow}prestashop>exportlengow_394dcde2383771cc4b12c88f9edafa86'] = 'Puoi visualizzare i tuoi ID Group e ID cliente sul tuo conto Lengow';
+$_MODULE['<{exportLengow}prestashop>exportlengow_7edc03a48f430c6b36c9efab3fc43965'] = 'ID cliente';
+$_MODULE['<{exportLengow}prestashop>exportlengow_323e237c481315f14a50e7fe99b34121'] = 'Group ID';
+$_MODULE['<{exportLengow}prestashop>exportlengow_0da809ca0434a69223ee5315c53f88dc'] = 'La categoria definita per default nelle schede prodotto è  utilizzata nell’ albero delle categorie. Se non trovi un prodotto, verifica la categoria per default, « Home » non puo essere definita come valore per default.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_bec25455e4d972b23d4db58d31401ed3'] = 'Scegli il tag (tracker)';
+$_MODULE['<{exportLengow}prestashop>exportlengow_89ce282683b8243f7236c1cbbbcde0ef'] = 'Parametro(i) opzionale(i) della URL:';
+$_MODULE['<{exportLengow}prestashop>exportlengow_f826395215beacf54cd1d820bb4e550a'] = 'Utilizza lo strumento di conversione di Prestashop per convertire i tuoi prezzi passando il codice iso della moneta.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_3585b13f96fe30516a205c512aaf339e'] = 'Esempio : convertire i tuoi prezzi in $ (codice iso: USD)';
+$_MODULE['<{exportLengow}prestashop>exportlengow_5165aea09d03f729f9d32d3bf2d1d6fc'] = 'Se non specificato, EUR è utilizzato per default.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_1cd7b1ea9c89bc8acba44cc85f24c88b'] = 'Utilizza lo strumento di traduzione di Prestashop passando per il codice iso2 della lingua per tradurre i titoli e le descrizione dei tuoi prodotti.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_05a6db5dfedeee4393164ed03a934023'] = 'Esempio: Tradurre in Spagnolo (ES)';
+$_MODULE['<{exportLengow}prestashop>exportlengow_d61edd26207edf85286387f4fe9d13bb'] = 'Se non specificato, IT è utilizzato per default.';
+$_MODULE['<{exportLengow}prestashop>exportlengow_fc3f05bd5d854a82e4f42979eb1aa750'] = 'Questi due parametri sono opzionali e possono essere utilizzati simultaneamente';
+$_MODULE['<{exportLengow}prestashop>exportlengow_b86104b61c8a5412ff13d3a039798c38'] = 'Esempio: convertire i tuoi prezzi in pound; (GBP) e tradurre in Inglese';
+$_MODULE['<{exportLengow}prestashop>exportlengow_4c7184ae0ee7e04538333afe6ed7ebd4'] = 'L\'opzione TagCapsule è disponibile solo con la firma del contratto. Se sei interessato, ti preghiamo di contattare i nostri commerciali.';
+

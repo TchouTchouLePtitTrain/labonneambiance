@@ -1,0 +1,34 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{exportlengow}prestashop>exportlengow_5bece808b0b66f50124ebc25494dc4d3'] = 'Lengow';
+$_MODULE['<{exportlengow}prestashop>exportlengow_9a71923a8dbd55e9f3e4b2225ed7f2dd'] = 'Exportez votre catalogue produits vers les comparateurs de prix, places de marché, régies d\'affiliation, réseaux sociaux, blogs et liens sponsorisés.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_4cc7b2483088b9f51e2b7d11603d7bd7'] = 'Etes vous certain de vouloir désinstaller le module Lengow?';
+$_MODULE['<{exportlengow}prestashop>exportlengow_574e0b7aece74215db65b0ee26ab58da'] = 'Lengow : export de votre catalogue produits';
+$_MODULE['<{exportlengow}prestashop>exportlengow_82b5a57b2835fad00a30bafb01d328b7'] = 'Informations : ';
+$_MODULE['<{exportlengow}prestashop>exportlengow_7078c3438bb46fdab36587050053cacf'] = 'Le principe est que la solution récupère le catalogue produits du marchand, configure, optimise et tracke les informations des campagnes marchandes afin de restituer à l\'e-commerçant les statistiques sous forme de tableaux de bords et graphiques.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_4116f2e6b08ae5aae73ed7f399cf45ee'] = 'Ce processus permet aux e-commerçants d\'optimiser leurs flux et leurs coûts d\'acquisition sur chaque support de diffusion.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_365589d7ae6168a24ff2de3c924149ed'] = 'Solution Lengow';
+$_MODULE['<{exportlengow}prestashop>exportlengow_f153d92c82352821bc659e5b8c753288'] = 'URL de votre catalogue produit :';
+$_MODULE['<{exportlengow}prestashop>exportlengow_0392e77d19d8f4c2f2cd5c93ce4dc87c'] = 'URL de votre catalogue produit avec les déclinaisons :';
+$_MODULE['<{exportlengow}prestashop>exportlengow_89ce282683b8243f7236c1cbbbcde0ef'] = 'Paramètre(s) optionel(s) de l\'URL:';
+$_MODULE['<{exportlengow}prestashop>exportlengow_f826395215beacf54cd1d820bb4e550a'] = 'Utilisez l\'outil de conversion de Prestashop pour convertir vos prix en passant le code iso de la devise.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_3585b13f96fe30516a205c512aaf339e'] = 'Exemple: convertir vos prix en $ (code iso: USD)';
+$_MODULE['<{exportlengow}prestashop>exportlengow_5165aea09d03f729f9d32d3bf2d1d6fc'] = 'Si non spécifié, EUR est utilisé par défaut.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_1cd7b1ea9c89bc8acba44cc85f24c88b'] = 'Utilisez l\'outil de traduction de Prestashop en passant le code iso2 de la langue pour traduire les titres et descriptions de vos produits.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_05a6db5dfedeee4393164ed03a934023'] = 'Exemple: Traduire en Espagnol (ES)';
+$_MODULE['<{exportlengow}prestashop>exportlengow_d61edd26207edf85286387f4fe9d13bb'] = 'Si non spécifié ci-dessous, FR est utilisé par défaut.';
+$_MODULE['<{exportlengow}prestashop>exportlengow_fc3f05bd5d854a82e4f42979eb1aa750'] = 'Ces deux paramètres optionels peuvent être utilisés simultanément';
+$_MODULE['<{exportlengow}prestashop>exportlengow_b86104b61c8a5412ff13d3a039798c38'] = 'Exemple: convertir vos prix en £ (GBP) et traduire en Anglais';
+$_MODULE['<{exportlengow}prestashop>exportlengow_1b5e4f9b07ad87029a7f94ce4006b1da'] = 'Le Module Lengow ne doit pas être renomé';
+$_MODULE['<{exportlengow}prestashop>formlengow_a27373b8e74f6483f3c6615caf08ec79'] = 'Votre Group ID doit être un entier > 0';
+$_MODULE['<{exportlengow}prestashop>formlengow_b01bcbd0500cda4c67a727b6cd61754e'] = 'Votre identifiant doit être un entier > 0';
+$_MODULE['<{exportlengow}prestashop>formlengow_07e5a123264f67e171d0493ba8774875'] = 'En indiquant votre identifiant Lengow ainsi que l\'id de groupe, vous pourrez ainsi placer le tag de conversion TagCapsule automatiquement sur l\'ensemble des pages de votre boutique.';
+$_MODULE['<{exportlengow}prestashop>formlengow_c2410ff87789464f6533bafeb9f79273'] = 'Où trouvez mes identifiants de groupe et client ?';
+$_MODULE['<{exportlengow}prestashop>formlengow_394dcde2383771cc4b12c88f9edafa86'] = 'Vous pouvez visualiser vos identifiants sur votre page Compte Lengow';
+$_MODULE['<{exportlengow}prestashop>formlengow_4c7184ae0ee7e04538333afe6ed7ebd4'] = 'L\'option Tagcapsule est disponible sous contrat uniquement. Si vous souhaitez y souscrire, nous vous invitons à contacter notre équipe commerciale.';
+$_MODULE['<{exportlengow}prestashop>formlengow_2c251c08b2589ac8a4dc78150b423417'] = 'Choisissez vos catégories et produits à exporter :';
+$_MODULE['<{exportlengow}prestashop>formlengow_0da809ca0434a69223ee5315c53f88dc'] = 'La catégorie définie par défaut dans les fiches produits sont utilisées dans cette arborescence. Si vous ne trouvez pas un produit, vérifier sa catégorie par défaut, \"Accueil\" ne peut être définie comme valeur par défaut.';
+$_MODULE['<{exportlengow}prestashop>formlengow_deb10517653c255364175796ace3553f'] = 'Produit';
+$_MODULE['<{exportlengow}prestashop>formlengow_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';

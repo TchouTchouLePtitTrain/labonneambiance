@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>exportLengow</name>
+            <displayName><![CDATA[Lengow]]></displayName>
+            <version><![CDATA[1.4.7]]></version>
+            <description><![CDATA[Exportez votre catalogue produits vers les comparateurs de prix, places de march&eacute;, r&eacute;gies d&#039;affiliation, r&eacute;seaux sociaux, blogs et liens sponsoris&eacute;s.]]></description>
+            <author><![CDATA[Lengow]]></author>
+            <tab><![CDATA[export]]></tab>
+	<confirmUninstall>Etes vous certain de vouloir désinstaller le module Lengow?</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>

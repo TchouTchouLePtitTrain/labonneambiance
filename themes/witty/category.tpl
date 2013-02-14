@@ -108,9 +108,7 @@
 			{/if}
 
 			{if ($category->id == 5)}
-				<article class="bandeau_packs">
-		    		<!-- <img src="img/bandeau_packs.png" alt="Bandeau jeu"/> -->
-		    	</article>
+				<div class="bandeau_packs"></div>
 		    {/if}
 			
 			{include file="./product-list.tpl" products=$products}

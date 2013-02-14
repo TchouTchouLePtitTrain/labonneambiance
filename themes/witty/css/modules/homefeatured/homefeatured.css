@@ -52,6 +52,7 @@
 	margin-top:10px;
 	padding:0;
 }
+
 #featured-products_block_center .price {
 	font-weight:bold;
 	font-size:14px;
@@ -63,38 +64,22 @@
 section.produitsPhares{
 	display:block;
 	height:auto;
-	width:322px;
-	margin-top:0px;
-	margin-left: 0px;
-	margin-right: 12px;
+	width:100%;
+	margin-top:50px;
 	position: relative;
-	border : solid 1px #e2dddb;
-	float:left;
 }
 
 .produitsPhares .titreProduitsPhares{
 	display:block;
-	margin-left: -1px;
-	margin-right: auto;
 	position: relative;
-	background-image: url(images/titre_bloc_phare_normal.png);
-	height:77px;
-	width:324px;
-}
-
-.produitsPhares .titreProduitsPhares:hover{
-	background-image: url(images/titre_bloc_phare_hover.png);
-}
-
-
-.produitsPhares .prix{
-	display:block;
 	margin-left: auto;
-	margin-right: 10px;
-	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	float:right;
-	margin-top: 5px;
-	margin-bottom: 0px;
+	margin-right: auto;
+	margin-bottom: 50px;
+	background-image:url(images/titre_recommande.png);
+	height:40px;
+	width:1000px;
+}
+
+.produitsPhares h2{
+	padding-bottom: 0px;
 }

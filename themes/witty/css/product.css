@@ -1,72 +1,118 @@
+/*
+.fiche{
+	display: block;
+	position: relative;
+	background-color: white;
+	width:960px;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+*/
+
+/*
+.fiche {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background-color: white;
+}
+*/
+
+
+.fiche {
+   position:relative;
+   margin: 0 0 2em 0;
+   background: #fff;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.150);
+   height:auto;
+   width:1000px;
+    
+   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+   z-index: 9;
+}
+
+.fiche:before {
+   z-index: -1;
+   position: absolute;
+   top: -2px;
+   left: 0;
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   border: 1px solid rgba(0, 0, 0, 0.150);
+
+   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+
+   -webkit-transform: rotate(1deg);
+   -moz-transform: rotate(1deg);
+   -o-transform: rotate(1deg);
+   -ms-transform: rotate(1deg);
+   transform: rotate(1deg);
+}
+
+.fiche:after {
+   z-index: -2;
+   position: absolute;
+   top: 1px;
+   left: -2px;
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   border: 1px solid rgba(0, 0, 0, 0.150);
+
+   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+   -webkit-transform: rotate(359deg);
+   -moz-transform: rotate(359deg);
+   -o-transform: rotate(359deg);
+   -ms-transform: rotate(359deg);
+   transform: rotate(359deg);
+}
+
+
+
+
+
 .galerie{
-	display:block;
-	/*margin-left:auto;
-	margin-right:auto;*/
-	margin-left:5%;
-	/*width:490px;
-	height:400px;*/
-	width:400px;
-	height:400px;
-	/*background-color:#CCC;*/
-	float:left;
-	margin-top:5px;/*30px;*/
+	display: block;
+    float: left;
+    height: 440px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 440px;
 }
 
 .ficheJeu{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
 	width:490px;
 	height:auto;
 	float:right;
-	margin-top:5px;/*30px;*/
+	padding: 20px;
 }
 
-.ficheJeu .infosGauche li{
+.ficheJeu .info li{
 	font-size:13px;
 	color: #797c7d;
 	margin-bottom:5px;
 	list-style-type: none; 
 }
-
-#blockpack .jeu .infos li{
-	font-size:13px;
-	color: #797c7d;
-	margin-bottom:5px;
-	list-style-type: none; 
-}
-
-#blockpack .jeu{
-	display:block;
-	float:left;
-	height:auto;
-	margin-top:20px;
-	width:290px;
-	padding-right:20px;
-	cursor: auto;
-}
-
-#blockpack .jeu .infos .titre{
-	cursor: auto;
-}
-
-#blockpack .jeu .filet{
-	display:block;
-	background-color: #e2dddb;
-	height: 1px;
-	width:100%;
-	margin-top:20px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	margin-bottom:20px;
-}
-
 
 .ficheJeu p{
 	font-size:13px;
 	color: #797c7d;
 	line-height:18px;
+	padding-bottom: 0px;
 }
 
 .ficheJeu .filet{
@@ -99,17 +145,17 @@
 	width:190px;
 }
 
-.ficheJeu .infosGauche .titre{
+.ficheJeu .titre{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
+	font-size:22px;
 	font-weight:bold;
 	color:#3d3d3d;
 	margin-bottom:20px;
-	margin-top:0px;
+	margin-top:10px;
 }
 
 .ficheJeu .texte{
@@ -123,20 +169,25 @@
 	margin-bottom:5px;
 }
 
-.ficheJeu .infosDroite .prix{
+.ficheJeu .achat .gauche{
+	float: left;
+}
+
+.ficheJeu .achat .prix{
 	display:block;
-	margin-left: 20px;
+	margin-left: 0px;
 	margin-right: auto;
 	position: relative;
 	font-family:"Arial", Helvetica, sans-serif;
-	font-size:30px;
+	font-size:24px;
 	color:#3d3d3d;
-	margin-bottom:0px;
-	float:right;
-	margin-top:0px;
+	margin-bottom:15px;
+	float:left;
+	margin-top:5px;
+	font-weight: bold;
 }
 
-.ficheJeu .infosDroite .stock{
+.ficheJeu .achat .stock{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
@@ -144,11 +195,9 @@
 	font-family:"Arial", Helvetica, sans-serif;
 	font-size:14px;
 	color:#3d3d3d;
-	margin-bottom:5px;
-	float:right;
 	margin-top: 10px;
 }
-.ficheJeu .infosDroite .indisponible{
+.ficheJeu .achat .indisponible{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
@@ -157,8 +206,20 @@
 	font-size:14px;
 	color:#D8331D;
 	margin-bottom:5px;
-	float:right;
 	margin-top: 10px;
+	float: right;
+}
+
+.ficheJeu .info .gauche{
+	display: block;
+	width: 45%;
+	float: left;
+}
+
+.ficheJeu .info .droite{
+	display: block;
+	width: 45%;
+	float: right;
 }
 
 .btn_ajouterPanier{
@@ -167,12 +228,12 @@
 	margin-right: auto;
 	position: relative;
 	background-image:url(../img/product/btn_ajouterPanier_normal.png);
-	height:53px;
-	width:187px;
+	height:52px;
+	width:216px;
 	float:right;
 	border: 1px solid #fff;
 	background-color: #fff;
-	margin-top:-10px;
+	margin-top:0px;
 	cursor: pointer;
 }
 
@@ -345,7 +406,7 @@ a.pack_price{
 }
 
 #bigpic{
-	width:100%;
+	width:440px;
 	/*width:600px;
 	margin-top:-100px;
 	margin-left: -55px;*/
@@ -355,18 +416,51 @@ a.pack_price{
 	margin-top:20px;
 }
 
-/* Jeux du pack */
-#blockpack{
-	/*border-top: 1px solid #3D3D3D;*/
-}
-
-#blockpack .jeu .infos h2{
-	color: #3D3D3D;
-	font-family: "Arial",Helvetica,sans-serif;
-	font-size:2em;
-	font-weight: bold;
-}
 #test{
 	color:black;
 	text-decoration:none;
 }
+
+
+/* Ces jeux vous plairont aussi */
+
+#blockpack .bandeau_titre{
+	display:block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image:url(../img/titre_liste.png);
+	height:40px;
+	width:1000px;
+}
+
+
+/* Ces jeux vous plairont aussi */
+
+
+section.plaire{
+	display:block;
+	height:auto;
+	width:100%;
+	margin-top:50px;
+	position: relative;
+}
+
+.plaire .titrePlaire{
+	display:block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	background-image:url(images/titre_plaire.png);
+	height:40px;
+	width:1000px;
+}
+
+.plaire h2{
+	padding-bottom: 0px;
+}
+
+/* Produits phares */

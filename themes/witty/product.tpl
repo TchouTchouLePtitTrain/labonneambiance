@@ -167,6 +167,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		</p>
 	{/if}
 	
+
+
+
+<div class="fiche">
+
+	{*
 	<!-- right infos-->
 	<div id="pb-right-column">
 		<!-- product img-->
@@ -177,7 +183,18 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 				<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
 			{/if}
 		</div>
-		
+		*}
+	
+	<!-- product img-->
+	<div class="galerie">
+
+		{if $have_image}
+			<img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')}" {if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic"/>
+		{else}
+			<img src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
+		{/if}
+	
+	
 		{if isset($images) && count($images) > 0}
 			<!-- thumbnails -->
 			<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
@@ -210,32 +227,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 	</div>
 
 	<section class="ficheJeu">
-		<article class="infosGauche">
+
+		<h1 class="titre">{$product->name|escape:'htmlall':'UTF-8'}</h1>
 		
-			<h1 class="titre">{$product->name|escape:'htmlall':'UTF-8'}</h1>
-			
-			{if $packItems|@count > 0} {* Si on affiche un pack *}
-				<p class="texte" style="font-weight:bold;">composé de :</p>
-				<p class="texte">
-					{foreach from=$packItems item=packItem}
-					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
-					{/foreach}
-				</p>
-			{else}
-				<ul>
-					{foreach from=$features item=feature}
-						{if isset($feature.value)}
-							<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
-						{/if}
-					{/foreach}
-				</ul>
-			{/if}
-			
-			
-		</article>
+		<div class="filet"></div>
 		
-		
-		<article class="infosDroite">
+		<article class="achat">
 			{if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
 				<!-- add to cart form-->
 				{* <form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart')}" method="post"> *}
@@ -246,32 +243,66 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 					<input type="hidden" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
 					<input type="hidden" name="add" value="1" />
 					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
-					
-					<p class="prix">{convertPrice price=$productPrice}</p>
-			
-					<!-- prices -->
-					{if $product->show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE}
-					
-						{if $product->online_only}
-							<p class="online_only">{l s='Online only'}</p>
+					<div class="gauche">
+						<p class="prix">{convertPrice price=$productPrice}</p>
+				
+						<!-- prices -->
+						{if $product->show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE}
+						
+							{if $product->online_only}
+								<p class="online_only">{l s='Online only'}</p>
+							{/if}
+							<br/>
+							{if $packItems|@count && $productPrice < $product->getNoPackPrice()}
+								{* Il y a une marge sur les p, va savoir pourquoi, du coup pour le moment on change en balise <a> <p class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p> *}
+								<a class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></a>
+							{/if}
+							
+							{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
+								<p class="indisponible">Ce jeu n'est pas disponible</p>
+							{else}
+								<p class="stock">Stock : Disponible</p>
+							{/if}
 						{/if}
-						<br/>
-						{if $packItems|@count && $productPrice < $product->getNoPackPrice()}
-							{* Il y a une marge sur les p, va savoir pourquoi, du coup pour le moment on change en balise <a> <p class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p> *}
-							<a class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></a>
-						{/if}
-						<p class="stock">Stock : Disponible</p>
-					{/if}
+					</div>
 
 					{* Bouton d'ajout au panier *}
-					{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
-						<p class="indisponible">Ce jeu n'est pas disponible</p>
-					{else}
+					{if !((!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE)}
 						<input id="add_to_cart" type="submit" name="Submit" class="btn_ajouterPanier" value=""/>
 					{/if}
 					{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 				</form>
 			{/if}
+		</article>
+		<div class="spacer"></div>
+		<div class="filet"></div>
+		<article class="info">	
+			
+			{if $packItems|@count > 0} {* Si on affiche un pack *}
+				<p class="texte" style="font-weight:bold;">composé de :</p>
+				<p class="texte">
+					{foreach from=$packItems item=packItem}
+					- <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a><br/>
+					{/foreach}
+					</p>
+					{else}
+					<ul class="gauche"> <!-- Mettre ici le nombre de joueurs, l'age et la durée de jeu -->
+						{foreach from=$features item=feature}
+							{if (isset($feature.value) and ($feature.name == 'Nb. de joueurs' or $feature.name == 'Age' or $feature.name == 'Durée'))}
+								<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
+							{/if}
+						{/foreach}
+					</ul>
+					<ul class="droite"> <!-- Mettre ici le theme, l'éditeur et l'auteur -->
+						{foreach from=$features item=feature}
+							{if (isset($feature.value) and ($feature.name == 'Editeur' or $feature.name == 'Thème' or $feature.name == 'Auteur'))}
+								<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
+							{/if}
+						{/foreach}
+					</ul>
+			{/if}
+			
+			
 		</article>
 			
 			
@@ -279,35 +310,45 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
         <div class="filet"></div>
         {$product->description}
 	</section>
-	
+	<div class="spacer"></div>
+</div>	
+
     <div class="spacer"> </div>
 </div>
 
 {if isset($packItems) && $packItems|@count > 0}
 	<div id="blockpack">
+		<div class="bandeau_titre"></div>
 		<!-- Products list -->
 		{foreach from=$packItems item=product}
-			<article class="jeu">
-				<div class="infos">
-					<h2 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h2>
-					<ul>
-						{foreach from=$product.features item=feature}
-							{if isset($feature.value)}
-								<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
-							{/if}
-						{/foreach}
-					</ul>
-					<div class="filet"></div>
-					<p class="texte">{$product.description|strip_tags:'UTF-8'}</p>
-				 </div>
-				  <div class="spacer"></div> 
-				<a class="voirFiche" href="{$product.link|escape:'htmlall':'UTF-8'}">&#8658; Voir la fiche</a>
-				<p class="prix">{convertPrice price=$product.price}</p>
-			</article>
-		{/foreach}
+			<a class="jeu" href="{$product.link}">
+	               <img class="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'large_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} />
+	            <div class="bloc">	
+	            	<h2 class="titre">{$product.name|escape:'htmlall':'UTF-8'}</h2>
+	            	<div class="bas">
+	                	<p class="prix">{convertPrice price=$product.price}</p>
+	                	<div class="ajouter" src="" alt=""> </div> 
+	            	</div>
+	            </div>
+		        <div class="hover">
+		            {if isset($product.features)}
+		            <div class="infos">
+		                        <ul class="caracteristiques">
+		                            {foreach from=$product.features item=feature}
+		                                {if isset($feature.value) and ( ($feature.name == 'Age') or ($feature.name == 'Nb. de joueurs') or ($feature.name == 'Durée') )}
+		                                    <li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
+		                                {/if}
+		                            {/foreach}
+		                        </ul>
+		                    </div>
+		                    {/if} 
+		        </div>
+		    </a>
+		    {/foreach}
 		<!-- /Products list -->
 	</div>
 {/if}
+<div class="spacer"> </div>
 
 {/if}
 

@@ -5,22 +5,22 @@
 	display: none;
 }
 #header #cart_block {
-	z-index: 10;
+	z-index: 999;
 	display:none;
 	position: absolute;
 	right: 0;
-	top: 65px;
+	top: 170px;
 	height: auto;
-	width: 200px;
+	width: 195px;
 	-moz-border-bottom-right-radius: 3px;
 	-moz-border-bottom-left-radius: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
-	box-shadow: 0 1px 0 #C6C6C6;
 	background:#eee;
 	margin: 6px 7px 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 #cart_block.cart_block_hover {display:block}
 #cart_block h4 span {
@@ -82,7 +82,7 @@
 #cart_block #cart-buttons .button_small {display:none;}
 #cart_block #cart-buttons  #button_order_cart {
 	float:right;
-	padding-left:20px
+	padding-left:10px
 }
 #cart_block #cart-buttons  #button_order_cart span {
 	position:absolute;

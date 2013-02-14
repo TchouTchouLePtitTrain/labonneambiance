@@ -2361,15 +2361,18 @@ class WittyBlockLayered extends Module
 						if (!isset($sub_queries[$filter_value_array[0]]))
 							$sub_queries[$filter_value_array[0]] = array();
 
-						//TC - Ajout pour permettre le filtre par borne min et borne max
-						if (strpos($filter_value_array[0], 'min_') === true) //Si la caractéristique est un minimum, on ne garde que les produits dont la valeur pour cette caractéristique est supérieure
-							$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` >= '.(int)$filter_value_array[1];
-						elseif(strpos($filter_value_array[0], 'max_') === true) //Idem pour le maximum, on ne garde que les valeurs inférieures
-							$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` <= '.(int)$filter_value_array[1];
-						else
-							$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` = '.(int)$filter_value_array[1];
-						//Fin Ajout
+						// TC - Ajout pour permettre le filtre pour les caractéristiques correspondant à une plage de valeur
+						// Les plages de caractéristiques doivent être de la forme 4:6, signifiant "de 4 à 6"
+						if (strpos($filter_value_array[1], ':') !== false)
+						{
+							$plage = explode(':', $filter_value_array[1]); 
 							
+							$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` >= '.(int)$plage[0];
+							$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` <= '.(int)$plage[1];
+						}
+						else $sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` = '.(int)$filter_value_array[1];
+						//Fin Ajout
+
 						/* Code original :
 						$sub_queries[$filter_value_array[0]][] = 'fp.`id_feature_value` = '.(int)$filter_value_array[1];
 						*/
