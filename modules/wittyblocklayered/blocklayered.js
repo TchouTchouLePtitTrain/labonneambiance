@@ -397,7 +397,7 @@ function reloadContent(params_plus)
 	ajaxQuery = $.ajax(
 	{
 		type: 'GET',
-		url: baseDir + 'modules/blocklayered/blocklayered-ajax.php',
+		url: baseDir + 'modules/wittyblocklayered/blocklayered-ajax.php',
 		data: data+params_plus+n,
 		dataType: 'json',
 		cache: false, // @todo see a way to use cache and to add a timestamps parameter to refresh cache each 10 minutes for example

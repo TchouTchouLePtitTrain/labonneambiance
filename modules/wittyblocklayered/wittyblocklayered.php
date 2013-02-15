@@ -971,7 +971,7 @@ class WittyBlockLayered extends Module
 		
 		if (($nb_products > 0 && !$full || $cursor < $nb_products && $full) && !$ajax)
 		{
-			$token = substr(Tools::encrypt('blocklayered/index'), 0, 10);
+			$token = substr(Tools::encrypt('wittyblocklayered/index'), 0, 10);
 			if (Tools::usingSecureMode())
 				$domain = Tools::getShopDomainSsl(true);
 			else
@@ -1579,33 +1579,33 @@ class WittyBlockLayered extends Module
 		$html .= '
 			<a class="bold ajaxcall-recurcive"
 			style="width: 250px; text-align:center;display:block;border:1px solid #aaa;text-decoration:none;background-color:#fafafa;color:#123456;margin:2px;padding:2px"
-			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'">'.
+			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'">'.
 			$this->l('Index all missing prices').'</a>
 			<br />
 			<a class="bold ajaxcall-recurcive"
 			style="width: 250px; text-align:center;display:block;border:1px solid #aaa;text-decoration:none;background-color:#fafafa;color:#123456;margin:2px;padding:2px" id="full-index"
-			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&full=1">'.
+			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'&full=1">'.
 			$this->l('Rebuild entire price index').'</a>
 			<br />
 			<a class="bold ajaxcall" id="attribute-indexer" rel="attribute"
 			style="width: 250px; text-align:center;display:block;border:1px solid #aaa;text-decoration:none;background-color:#fafafa;color:#123456;margin:2px;padding:2px" id="full-index"
-			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-attribute-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'">'.
+			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-attribute-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'">'.
 			$this->l('Build attribute index').'</a>
 			<br />
 			<a class="bold ajaxcall" id="url-indexer" rel="price"
 			style="width: 250px; text-align:center;display:block;border:1px solid #aaa;text-decoration:none;background-color:#fafafa;color:#123456;margin:2px;padding:2px" id="full-index"
-			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-url-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&truncate=1">'.
+			href="'.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-url-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'&truncate=1">'.
 			$this->l('Build URL index').'</a>
 			<br />
 			<br />
 			'.$this->l('You can set a cron job that will rebuild price index using the following URL:').'<br /><b>'.
-			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&full=1</b>
+			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'&full=1</b>
 			<br />
 			'.$this->l('You can set a cron job that will rebuild URL index using the following URL:').'<br /><b>'.
-			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-url-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&truncate=1</b>
+			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-url-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'&truncate=1</b>
 			<br />
 			'.$this->l('You can set a cron job that will rebuild attribute index using the following URL:').'<br /><b>'.
-			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-attribute-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'</b>
+			$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-attribute-indexer.php'.'?token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'</b>
 			<br /><br />
 			'.$this->l('A nightly rebuild is recommended.').'
 			<script type="text/javascript">
@@ -1979,7 +1979,7 @@ class WittyBlockLayered extends Module
 						{
 							type: \'POST\',
 							url: \''.__PS_BASE_URI__.'\' + \'modules/wittyblocklayered/blocklayered-ajax-back.php\',
-							data: \'layered_token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&id_lang='.$id_lang.'&\'
+							data: \'layered_token='.substr(Tools::encrypt('wittyblocklayered/index'), 0, 10).'&id_lang='.$id_lang.'&\'
 								+(all ? \'\' : $(\'input[name="categoryBox[]"]\').serialize()+\'&\')
 								+(id_layered_filter ? \'id_layered_filter=\'+parseInt(id_layered_filter) : \'\')
 								+\'&base_folder='.urlencode(_PS_ADMIN_DIR_).'\',
@@ -3725,6 +3725,7 @@ class WittyBlockLayered extends Module
 							<option value="0">'.$this->l('Checkbox').'</option>
 							<option value="1">'.$this->l('Radio button').'</option>
 							<option value="2">'.$this->l('Drop-down list').'</option>
+							<option value="3">'.$this->l('List of values').'</option>
 						</select>
 					</li>';
 				$html .= '</ul>';
