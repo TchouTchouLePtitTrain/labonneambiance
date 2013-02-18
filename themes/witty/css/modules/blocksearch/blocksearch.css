@@ -31,9 +31,15 @@
 	position: relative;
 	font-family:"Arial", Helvetica, sans-serif;
 	font-size:13px;
-	color:#9e9d9d;
+	color:#313130;
 	margin-top:8px;
 }
+
+/* all */
+::-webkit-input-placeholder { color:#9e9d9d; }
+::-moz-placeholder { color:#9e9d9d; } /* firefox 19+ */
+:-ms-input-placeholder { color:#9e9d9d; } /* ie */
+input:-moz-placeholder { color:#9e9d9d; }
 
 #searchbox input[type=text]{
 	float:left;
@@ -41,7 +47,6 @@
 	width:325px;
 	height:45px;
 	background:url(images/champ_rechercher.png) top left no-repeat;
-	color:#9e9d9d;
 	padding:10px 0 0 60px;
 }
 

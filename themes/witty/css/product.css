@@ -80,16 +80,11 @@
    transform: rotate(359deg);
 }
 
-
-
-
-
 .galerie{
 	display: block;
     float: left;
-    height: 440px;
+    height: auto;
     margin-left: 20px;
-    margin-top: 20px;
     width: 440px;
 }
 
@@ -150,9 +145,9 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:22px;
-	font-weight:bold;
+	font-family: 'Amaranth', sans-serif;
+	font-size:30px;
+	font-weight:normal;
 	color:#3d3d3d;
 	margin-bottom:20px;
 	margin-top:10px;
@@ -265,9 +260,9 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	font-family:"Arial", Helvetica, sans-serif;
-	font-size:20px;
-	font-weight:bold;
+	font-family: 'Amaranth', sans-serif;
+	font-size:30px;
+	font-weight:normal;
 	color:#3d3d3d;
 	margin-bottom:20px;
 	margin-top:0px;
@@ -421,6 +416,39 @@ a.pack_price{
 	text-decoration:none;
 }
 
+/* Galerie */ 
+
+.fiche .galerie #views_block{
+	display: block;
+	width: 440px;
+	height: auto;
+	border-top: 1px solid #e2dddb;
+	padding-top: 15px;
+}
+
+.fiche .galerie #views_block #thumbs_list{
+	display: block;
+	width: 440px;
+	height: auto;
+}
+
+.fiche .galerie #views_block #thumbs_list #thumbs_list_frame{
+	display: block;
+	width: 440px;
+}
+
+.fiche .galerie #views_block #thumbs_list #thumbs_list_frame li{
+	display: inline-block;
+	border: 1px solid #e2dddb;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: white;
+}
+
+.fiche .galerie #views_block #thumbs_list #thumbs_list_frame li a img{
+	width: 100px;
+}
 
 /* Ces jeux vous plairont aussi */
 

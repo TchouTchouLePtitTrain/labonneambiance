@@ -198,9 +198,9 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		{if isset($images) && count($images) > 0}
 			<!-- thumbnails -->
 			<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
-			{if isset($images) && count($images) > 3}<span class="view_scroll_spacer"><a id="view_scroll_left" class="hidden" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Previous'}</a></span>{/if}
+			<!-- {if isset($images) && count($images) > 3}<span class="view_scroll_spacer"><a id="view_scroll_left" class="hidden" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Previous'}</a></span>{/if} -->
 			<div id="thumbs_list">
-				<ul id="thumbs_list_frame">
+				<ul id="thumbs_list_frame" style="width:440px;">
 					{if isset($images)}
 						{foreach from=$images item=image name=thumbnails}
 						{assign var=imageIds value="`$product->id`-`$image.id_image`"}
@@ -213,7 +213,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 					{/if}
 				</ul>
 			</div>
-			{if isset($images) && count($images) > 3}<a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Next'}</a>{/if}
+			<!-- {if isset($images) && count($images) > 3}<a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Next'}</a>{/if} -->
 		</div>
 		{/if}
 		{if isset($images) && count($images) > 1}<p class="resetimg clear"><span id="wrapResetImages" style="display: none;"><img src="{$img_dir}icon/cancel_11x13.gif" alt="{l s='Cancel'}" width="11" height="13"/> <a id="resetImages" href="{$link->getProductLink($product)}" onclick="$('span#wrapResetImages').hide('slow');return (false);">{l s='Display all pictures'}</a></span></p>{/if}
@@ -257,17 +257,13 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 								{* Il y a une marge sur les p, va savoir pourquoi, du coup pour le moment on change en balise <a> <p class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p> *}
 								<a class="pack_price">{l s='instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></a>
 							{/if}
-							
-							{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
-								<p class="indisponible">Ce jeu n'est pas disponible</p>
-							{else}
-								<p class="stock">Stock : Disponible</p>
-							{/if}
+							<p class="stock">Stock : Disponible</p>
 						{/if}
 					</div>
-
 					{* Bouton d'ajout au panier *}
-					{if !((!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE)}
+					{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
+						<p class="indisponible">Ce jeu n'est pas disponible</p>
+					{else}
 						<input id="add_to_cart" type="submit" name="Submit" class="btn_ajouterPanier" value=""/>
 					{/if}
 					{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}

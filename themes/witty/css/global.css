@@ -546,7 +546,8 @@ ul.pagination li.disabled span {color:#ccc}
 }
 
 /* CART steps *********************************************************************** */
-ul#order_step { background-color: white;}
+
+/* ul#order_step { background-color: white;} */
 ul.step {
 	list-style-type:none;
 	margin-bottom:30px;
