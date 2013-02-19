@@ -425,7 +425,7 @@ function displayImage(domAAroundImgThumb, no_animation)
 	
 	if (domAAroundImgThumb.attr('href'))
 	{
-		var newSrc = domAAroundImgThumb.attr('href').replace('thickbox','large');
+		var newSrc = domAAroundImgThumb.attr('href').replace('thickbox','thickbox');
 		if ($('#bigpic').attr('src') != newSrc)
 		{
 			$('#bigpic').fadeOut((no_animation ? 0 : 'fast'), function(){

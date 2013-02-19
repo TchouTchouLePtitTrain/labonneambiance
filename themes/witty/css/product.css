@@ -421,20 +421,20 @@ a.pack_price{
 .fiche .galerie #views_block{
 	display: block;
 	width: 440px;
-	height: auto;
+	height: 120px;
 	border-top: 1px solid #e2dddb;
 	padding-top: 15px;
 }
 
 .fiche .galerie #views_block #thumbs_list{
 	display: block;
-	width: 440px;
+	width: 350px;
 	height: auto;
+	float: left;
 }
 
 .fiche .galerie #views_block #thumbs_list #thumbs_list_frame{
-	display: block;
-	width: 440px;
+	
 }
 
 .fiche .galerie #views_block #thumbs_list #thumbs_list_frame li{
@@ -449,6 +449,22 @@ a.pack_price{
 .fiche .galerie #views_block #thumbs_list #thumbs_list_frame li a img{
 	width: 100px;
 }
+
+/* Galerie - précédent et suivant */ 
+
+#view_scroll_left{
+	float: left;
+}
+
+#view_scroll_right{
+	float: left;
+}
+
+/* Partager sur facebook */ 
+
+#left_share_fb{
+	list-style-type: none;
+	}
 
 /* Ces jeux vous plairont aussi */
 
