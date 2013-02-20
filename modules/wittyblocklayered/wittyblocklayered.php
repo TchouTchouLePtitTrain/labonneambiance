@@ -2828,7 +2828,7 @@ class WittyBlockLayered extends Module
 			foreach ($filters as $filter_tmp)
 			{
 				$method_name = 'get'.ucfirst($filter_tmp['type']).'FilterSubQuery';
-				if (method_exists('BlockLayered', $method_name) &&
+				if (method_exists('WittyBlockLayered', $method_name) &&
 				(!in_array($filter['type'], array('price', 'weight')) && $filter['type'] != $filter_tmp['type'] || $filter['type'] == $filter_tmp['type']))
 				{
 					if ($filter['type'] == $filter_tmp['type'] && $filter['id_value'] == $filter_tmp['id_value'])
@@ -2857,7 +2857,7 @@ class WittyBlockLayered extends Module
 			foreach ($filters as $filter_tmp)
 			{
 				$method_name = 'filterProductsBy'.ucfirst($filter_tmp['type']);
-				if (method_exists('BlockLayered', $method_name) &&
+				if (method_exists('WittyBlockLayered', $method_name) &&
 				(!in_array($filter['type'], array('price', 'weight')) && $filter['type'] != $filter_tmp['type'] || $filter['type'] == $filter_tmp['type']))
 					if ($filter['type'] == $filter_tmp['type'])
 						$products = self::$method_name(array(), $products);

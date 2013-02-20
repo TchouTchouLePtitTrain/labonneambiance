@@ -34,13 +34,13 @@ param_product_url = '';
 {/if}
 </script>
 <div id="layered_block_left" class="block">
-	<h4 class="title_block">{l s='Catalog' mod='blocklayered'}</h4>
+	<h4 class="title_block">{l s='Catalog' mod='wittyblocklayered'}</h4>
 	<div class="block_content">
 		<form action="#" id="layered_form">
 			<div>
 				{if isset($selected_filters) && $n_filters > 0}
 				<div id="enabled_filters">
-					<span class="layered_subtitle" style="float: none;">{l s='Enabled filters:' mod='blocklayered'}</span>
+					<span class="layered_subtitle" style="float: none;">{l s='Enabled filters:' mod='wittyblocklayered'}</span>
 					<ul>
 					{foreach from=$selected_filters key=filter_type item=filter_values}
 						{foreach from=$filter_values key=filter_key item=filter_value name=f_values}
@@ -49,7 +49,7 @@ param_product_url = '';
 									{if isset($filter.slider)}
 										{if $smarty.foreach.f_values.first}
 											<li>
-												<a href="#" rel="layered_{$filter.type}_slider" title="{l s='Cancel' mod='blocklayered'}">x</a>
+												<a href="#" rel="layered_{$filter.type}_slider" title="{l s='Cancel' mod='wittyblocklayered'}">x</a>
 												{$filter.name|escape:html:'UTF-8'}{l s=':' mod='blocklayered'}
 												{if $filter.format}
 													{displayPrice price=$filter.values[0]} - 

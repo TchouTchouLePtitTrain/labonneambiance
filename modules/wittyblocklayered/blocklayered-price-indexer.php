@@ -1,9 +1,9 @@
 <?php
 
 include(dirname(__FILE__).'/../../config/config.inc.php');
-include(dirname(__FILE__).'/blocklayered.php');
+include(dirname(__FILE__).'/wittyblocklayered.php');
 
-if (substr(Tools::encrypt('blocklayered/index'),0,10) != Tools::getValue('token') || !Module::isInstalled('blocklayered'))
+if (substr(Tools::encrypt('wittyblocklayered/index'),0,10) != Tools::getValue('token') || !Module::isInstalled('wittyblocklayered'))
 	die('Bad token');
 
 if (!Tools::getValue('ajax'))
@@ -20,7 +20,7 @@ if (!Tools::getValue('ajax'))
 	else
 		$domain = Tools::getShopDomain(true);
 	// Return a content without waiting the end of index execution
-	header('Location: '.$domain.__PS_BASE_URI__.'modules/blocklayered/blocklayered-price-indexer.php?token='.Tools::getValue('token') .'&return_message='.(int)Tools::getValue('cursor'));
+	header('Location: '.$domain.__PS_BASE_URI__.'modules/wittyblocklayered/blocklayered-price-indexer.php?token='.Tools::getValue('token') .'&return_message='.(int)Tools::getValue('cursor'));
 	flush();
 }
 

@@ -23,5 +23,5 @@
 *  International Registred Trademark & Property of PrestaShop SA
 *}
 <div id="product_list" class="clear">
-	<p class="warning">{l s='There are no products.' mod='blocklayered'}</p>
+	<p class="warning">{l s='There are no products.' mod='wittyblocklayered'}</p>
 </div>

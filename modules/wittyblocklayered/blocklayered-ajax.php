@@ -26,7 +26,7 @@
 
 include(dirname(__FILE__).'/../../config/config.inc.php');
 include(dirname(__FILE__).'/../../init.php');
-include(dirname(__FILE__).'/blocklayered.php');
+include(dirname(__FILE__).'/wittyblocklayered.php');
 
 $blockLayered = new BlockLayered();
 echo $blockLayered->ajaxCall();
