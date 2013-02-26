@@ -416,48 +416,70 @@ a.pack_price{
 	text-decoration:none;
 }
 
-/* Galerie */ 
+/* miniatures */
+#pb-right-column #views_block {
+	margin-top:10px;
+	width:266px;
+}
 
-.fiche .galerie #views_block{
-	display: block;
-	width: 440px;
+#views_block{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top:1px solid #E2DDDB;
+	padding-top: 20px;
+}
+
+#thumbs_list {
+	float:left;
+	overflow:hidden;
+	margin-left:4px;
+	width:390px;
 	height: 120px;
-	border-top: 1px solid #e2dddb;
-	padding-top: 15px;
 }
 
-.fiche .galerie #views_block #thumbs_list{
-	display: block;
-	width: 350px;
-	height: auto;
-	float: left;
+#thumbs_list ul#thumbs_list_frame {
+	list-style-type:none;
+	padding-left:0;
+	height: 120px;
 }
 
-.fiche .galerie #views_block #thumbs_list #thumbs_list_frame{
-	
+#thumbs_list li {
+	float:left;
+	height:120px;
+	/* width:100px; */
+	cursor:pointer;
 }
 
-.fiche .galerie #views_block #thumbs_list #thumbs_list_frame li{
-	display: inline-block;
-	border: 1px solid #e2dddb;
-	margin-bottom: 15px;
-	margin-left: 5px;
-	margin-right: 5px;
-	background-color: white;
+#thumbs_list li img {
+	margin:0 6px;
+	border:1px solid #E2DDDB;
+	height: 115px;
+	width: 115px;
 }
 
-.fiche .galerie #views_block #thumbs_list #thumbs_list_frame li a img{
-	width: 100px;
+span.view_scroll_spacer {
+	float:left;
+	height:16px;
+	width:21px;
 }
 
-/* Galerie - précédent et suivant */ 
-
-#view_scroll_left{
-	float: left;
+#view_scroll_left,#view_scroll_right {
+	float:left;
+	margin-top:50px;
+	padding:0 4px;
+	height:18px;
+	width:9px;
+	text-indent:-3000px;
+	background:url(../img/thumbs_left.gif) no-repeat center center transparent;
 }
 
-#view_scroll_right{
-	float: left;
+#view_scroll_right {
+	margin-left:4px;
+	background-image:url(../img/thumbs_right.gif);
+}
+
+.resetimg {
+	padding:10px 0 0;
 }
 
 /* Partager sur facebook */ 

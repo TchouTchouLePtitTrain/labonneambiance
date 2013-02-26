@@ -200,7 +200,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
 			{if isset($images) && count($images) > 3}<span class="view_scroll_spacer"><a id="view_scroll_left" class="hidden" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Previous'}</a></span>{/if}
 			<div id="thumbs_list">
-				<ul id="thumbs_list_frame" style="width:440px;">
+				<ul id="thumbs_list_frame">
 					{if isset($images)}
 						{foreach from=$images item=image name=thumbnails}
 						{assign var=imageIds value="`$product->id`-`$image.id_image`"}
