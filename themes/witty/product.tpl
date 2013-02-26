@@ -307,9 +307,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{if $have_image && !$jqZoomEnabled}
 			{/if}
 		</ul> -->
-		<div class="filet"></div>
+		
 		{* Attention, il faut que toutes les vidéos fassent la même taille (pour l'instant ce n'est pas le cas) *}
-		{if $product->video} <iframe frameborder="0" width="490" height="286" src="{$product->video}"></iframe> {/if}
+		{if $product->video} 
+			<div class="filet"></div>
+			<iframe frameborder="0" width="490" height="286" src="{$product->video}"></iframe> 
+		{/if}
 	</section>
 	<div class="spacer"></div>
 </div>
