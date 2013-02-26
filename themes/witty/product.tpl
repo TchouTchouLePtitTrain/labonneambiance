@@ -299,7 +299,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
         <div class="filet"></div>
         {$product->description}
         <!--
-        <div class="filet"></div>
+        
         <!-- usefull links ->
 		<ul id="usefull_link_block">
 			{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
@@ -307,9 +307,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{if $have_image && !$jqZoomEnabled}
 			{/if}
 		</ul> -->
+		<div class="filet"></div>
+		{* Attention, il faut que toutes les vidéos fassent la même taille (pour l'instant ce n'est pas le cas) *}
+		{if $product->video} <iframe frameborder="0" width="490" height="276" src="{$product->video}"></iframe> {/if}
 	</section>
 	<div class="spacer"></div>
-</div>	
+</div>
 
     <div class="spacer"> </div>
 </div>
@@ -331,18 +334,18 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		        <div class="hover">
 		            {if isset($product.features)}
 		            <div class="infos">
-		                        <ul class="caracteristiques">
-		                            {foreach from=$product.features item=feature}
-		                                {if isset($feature.value) and ( ($feature.name == 'Age') or ($feature.name == 'Nb. de joueurs') or ($feature.name == 'Durée') )}
-		                                    <li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
-		                                {/if}
-		                            {/foreach}
-		                        </ul>
-		                    </div>
-		                    {/if} 
+						<ul class="caracteristiques">
+							{foreach from=$product.features item=feature}
+								{if isset($feature.value) and ( ($feature.name == 'Age') or ($feature.name == 'Nb. de joueurs') or ($feature.name == 'Durée') )}
+									<li><span>{$feature.name|escape:'htmlall':'UTF-8'}</span> : {$feature.value|escape:'htmlall':'UTF-8'}</li>
+								{/if}
+							{/foreach}
+						</ul>
+					</div>
+					{/if} 
 		        </div>
 		    </a>
-		    {/foreach}
+		{/foreach}
 		<!-- /Products list -->
 	</div>
 {/if}
