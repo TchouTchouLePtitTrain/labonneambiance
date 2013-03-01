@@ -25,3 +25,5 @@
 *}
 
 {$HOOK_HOME}
+
+{include file="./product-list.tpl" products=$products}
