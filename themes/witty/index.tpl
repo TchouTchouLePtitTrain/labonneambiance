@@ -26,4 +26,5 @@
 
 {$HOOK_HOME}
 
+<div class="bandeau_jeux"></div>
 {include file="./product-list.tpl" products=$products}
